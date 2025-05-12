@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Tests;
 
 use TennisGame\TennisGame2;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 /**
  * TennisGame1 test case.
@@ -20,9 +21,7 @@ class TennisGame2Test extends TestMaster
         $this->game = new TennisGame2('player1', 'player2');
     }
 
-    /**
-     * @dataProvider data
-     */
+    #[DataProvider('data')]
     public function testScores(int $score1, int $score2, string $expectedResult): void
     {
         $this->seedScores($score1, $score2);

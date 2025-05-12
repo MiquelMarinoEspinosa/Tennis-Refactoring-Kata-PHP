@@ -14,7 +14,7 @@ abstract class TestMaster extends TestCase
     /**
      * @return mixed[][]
      */
-    public function data()
+    public static function data()
     {
         return [
             '0-0' => [0, 0, 'Love-All'],
