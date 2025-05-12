@@ -12,3 +12,12 @@
 # VS
 .vs/
 .vscode/
+
+/.idea
+/.phpstorm.meta.php
+/vendor
+/.phpunit.result.cache
+/build/
+
+composer.lock
+composer.phar
