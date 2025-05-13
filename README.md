@@ -229,3 +229,4 @@ make install
 - It has been noticed that at the second conditon branch at `getScore` method, there is a `temp variable` called `minusResult`. Since the `temp variable` usees the value of the 2 fields class, it can easily be replace by a `query`
 - Replace `minusResult` `temp variable` into a `query`
   - Replace `temp variable` initialization for a `query`
+  - Use the `query` instead of the `temp variable` at the first condition
