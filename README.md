@@ -231,3 +231,4 @@ make install
   - Replace `temp variable` initialization for a `query`
   - Use the `query` instead of the `temp variable` at the first condition
   - Use the `query` instead of the `temp variable` at the second condition
+  - Use the `query` instead of the `temp variable` at the third condition

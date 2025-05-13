@@ -38,7 +38,7 @@ class TennisGame1 implements TennisGame
                 return 'Advantage player1';
             } elseif ($this->minusResult() === -1) {
                 return 'Advantage player2';
-            } elseif ($minusResult >= 2) {
+            } elseif ($this->minusResult() >= 2) {
                 return 'Win for player1';
             } else {
                 return 'Win for player2';
