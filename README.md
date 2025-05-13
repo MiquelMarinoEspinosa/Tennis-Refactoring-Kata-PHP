@@ -230,3 +230,4 @@ make install
 - Replace `minusResult` `temp variable` into a `query`
   - Replace `temp variable` initialization for a `query`
   - Use the `query` instead of the `temp variable` at the first condition
+  - Use the `query` instead of the `temp variable` at the second condition

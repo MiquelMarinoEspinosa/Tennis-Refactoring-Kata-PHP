@@ -34,9 +34,9 @@ class TennisGame1 implements TennisGame
             };
         } elseif ($this->m_score1 >= 4 || $this->m_score2 >= 4) {
             $minusResult = $this->minusResult();
-            if ($this->minusResult()=== 1) {
+            if ($this->minusResult() === 1) {
                 return 'Advantage player1';
-            } elseif ($minusResult === -1) {
+            } elseif ($this->minusResult() === -1) {
                 return 'Advantage player2';
             } elseif ($minusResult >= 2) {
                 return 'Win for player1';
