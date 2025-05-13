@@ -178,3 +178,24 @@ make build
 make up
 make install
 ```
+
+### Refactor
+#### Initial code coverage
+- The initial code coverage is about `98.12%`
+  - All classes have got `100%` coverage except the `TennisGame2`, which has got `94.12%`
+    - The coverage could be increased one this class before starting the refactor of this class
+  - The coverage is good enough to start the refactor process
+
+### Refactor strategy
+- The refactor will basically consists in the following strategy
+  - Identify at the first stages quick wins
+    - extract paragraphs into methods
+    - use queries instead of temp variables
+    - split and slide whiles and foreachs
+    - introduce constants for magic numbers
+  - Apply the refactor in a baby step manner
+  - Execute the tests for each change before commiting the changes
+  - Commit changes frequently to have a safe rollback point
+  - Divise further design as you get familiar with the code through the refactor process
+- The process as well as the decisions taken will be commented at the `Refactor` section in this `README.md` file
+- Having said that, let's start the refactor with [TennisGame1](./src/TennisGame1.php) class. **Happy refactoring! :=)**
