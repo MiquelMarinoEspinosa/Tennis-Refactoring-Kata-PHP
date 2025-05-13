@@ -193,9 +193,22 @@ make install
     - use queries instead of temp variables
     - split and slide whiles and foreachs
     - introduce constants for magic numbers
+    - remove duplicated code
+    - apply safe guards early returns when possible
   - Apply the refactor in a baby step manner
   - Execute the tests for each change before commiting the changes
   - Commit changes frequently to have a safe rollback point
   - Divise further design as you get familiar with the code through the refactor process
 - The process as well as the decisions taken will be commented at the `Refactor` section in this `README.md` file
 - Having said that, let's start the refactor with [TennisGame1](./src/TennisGame1.php) class. **Happy refactoring! :=)**
+
+### Refactor
+#### TennisGame1
+- With a first look scrolling up and down slowly, the class has a certain degree of indentation and nesting level as well as some conditional branches which increase the code complexity
+  - The first idea would be reduce the level of nesting with `extract method`
+  - Reduce the code complexity reducing the `conditional branches`
+- Colapsing and opening methods analysis
+  - Colapsing the whole methods and just open one level of indentation, it can be found the first level of indentation
+    - I think that applying safe guards should help on reducing this conditional branches
+    - In case of `wonPoint` method it could even be solved with a `ternary` statement
+    - When it comes to the `getScore` there is a `temp variable` called `score` - go figure :P - which is used as a returned result. This `temp variables` use to lead to implement a couple code to update this variable status. I think in this cases `safe guards` AKA early returns could help at list to reduce the number of branches conditions
