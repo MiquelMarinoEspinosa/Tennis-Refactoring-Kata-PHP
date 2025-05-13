@@ -219,3 +219,4 @@ make install
   - Return directly the `match` result value without returning the `score` variable
 - Apply `safe guard` early return to second condition at `getScore` method
   - `safe guard` at first condition without returning the `score` variable
+  - `safe guard` at second condition without retuning the `score` variable
