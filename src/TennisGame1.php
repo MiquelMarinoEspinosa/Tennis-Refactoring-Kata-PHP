@@ -40,7 +40,7 @@ class TennisGame1 implements TennisGame
             } elseif ($minusResult === -1) {
                 return 'Advantage player2';
             } elseif ($minusResult >= 2) {
-                $score = 'Win for player1';
+                return 'Win for player1';
             } else {
                 $score = 'Win for player2';
             }

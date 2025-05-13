@@ -220,3 +220,4 @@ make install
 - Apply `safe guard` early return to second condition at `getScore` method
   - `safe guard` at first condition without returning the `score` variable
   - `safe guard` at second condition without retuning the `score` variable
+  - `safe guard` at third condition without returning the `score` variable
