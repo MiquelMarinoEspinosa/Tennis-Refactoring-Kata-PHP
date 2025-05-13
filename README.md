@@ -217,3 +217,5 @@ make install
   - Also it could have been change using `safe guard`
 - Apply `safe guard` early return at first branch condition at `getScore` method
   - Return directly the `match` result value without returning the `score` variable
+- Apply `safe guard` early return to second condition at `getScore` method
+  - `safe guard` at first condition without returning the `score` variable
