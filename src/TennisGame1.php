@@ -33,7 +33,7 @@ class TennisGame1 implements TennisGame
                 default => 'Deuce',
             };
         } elseif ($this->m_score1 >= 4 || $this->m_score2 >= 4) {
-            $minusResult = $this->m_score1 - $this->m_score2;
+            $minusResult = $this->minusResult();
             if ($minusResult === 1) {
                 return 'Advantage player1';
             } elseif ($minusResult === -1) {
@@ -76,5 +76,10 @@ class TennisGame1 implements TennisGame
         }
 
         return $score;
+    }
+
+    private function minusResult(): int
+    {
+        return $this->m_score1 - $this->m_score2;
     }
 }

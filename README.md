@@ -226,3 +226,6 @@ make install
   - The extracted method will eventually use the `score` temp variable. However, it will just be used in the scope of the new function
 - Now the coverage indicates that the last line `return $score` cannot be covered after the refactors. Meaning that the `temp variable` `score` is not needed any longer in the scope of the `getScore` method
 - Remove `score` `temp variable`
+- It has been noticed that at the second conditon branch at `getScore` method, there is a `temp variable` called `minusResult`. Since the `temp variable` usees the value of the 2 fields class, it can easily be replace by a `query`
+- Replace `minusResult` `temp variable` into a `query`
+  - Replace `temp variable` initialization for a `query`
