@@ -212,3 +212,6 @@ make install
     - I think that applying safe guards should help on reducing this conditional branches
     - In case of `wonPoint` method it could even be solved with a `ternary` statement
     - When it comes to the `getScore` there is a `temp variable` called `score` - go figure :P - which is used as a returned result. This `temp variables` use to lead to implement a couple code to update this variable status. I think in this cases `safe guards` AKA early returns could help at list to reduce the number of branches conditions
+    - Also I think that to follow [PSR12](https://www.php-fig.org/psr/psr-12/) the attributes name should change to be `camelCase`
+- Apply `ternary` instruction at `wonPoint` method
+  - Also it could have been change using `safe guard`
