@@ -221,3 +221,4 @@ make install
   - `safe guard` at first condition without returning the `score` variable
   - `safe guard` at second condition without retuning the `score` variable
   - `safe guard` at third condition without returning the `score` variable
+  - `safe guard` at fourth condition without returning the `score` variable
