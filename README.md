@@ -233,3 +233,7 @@ make install
   - Use the `query` instead of the `temp variable` at the second condition
   - Use the `query` instead of the `temp variable` at the third condition
   - Remove `minusResults` `temp variable`
+- Next steps
+  - Create hook for `minusResults` instead of a getter method
+  - Remove `elseif` and `else` instructions
+  - Change conditions and `switch` instructions into `match` instructions
