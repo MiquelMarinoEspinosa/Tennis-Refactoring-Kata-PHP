@@ -232,3 +232,4 @@ make install
   - Use the `query` instead of the `temp variable` at the first condition
   - Use the `query` instead of the `temp variable` at the second condition
   - Use the `query` instead of the `temp variable` at the third condition
+  - Remove `minusResults` `temp variable`
