@@ -215,3 +215,5 @@ make install
     - Also I think that to follow [PSR12](https://www.php-fig.org/psr/psr-12/) the attributes name should change to be `camelCase`
 - Apply `ternary` instruction at `wonPoint` method
   - Also it could have been change using `safe guard`
+- Apply `safe guard` early return at first branch condition at `getScore` method
+  - Return directly the `match` result value without returning the `score` variable
