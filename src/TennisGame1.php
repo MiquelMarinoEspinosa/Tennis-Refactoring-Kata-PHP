@@ -25,7 +25,6 @@ class TennisGame1 implements TennisGame
 
     public function getScore(): string
     {
-        $score = '';
         if ($this->m_score1 === $this->m_score2) {
             return match ($this->m_score1) {
                 0 => 'Love-All',
@@ -47,7 +46,6 @@ class TennisGame1 implements TennisGame
         } else {
             return $this->buildScore();
         }
-        return $score;
     }
 
     private function buildScore(): string
