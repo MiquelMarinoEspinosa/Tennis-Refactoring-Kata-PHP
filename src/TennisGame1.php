@@ -45,29 +45,38 @@ class TennisGame1 implements TennisGame
                 return 'Win for player2';
             }
         } else {
-            for ($i = 1; $i < 3; $i++) {
-                if ($i === 1) {
-                    $tempScore = $this->m_score1;
-                } else {
-                    $score .= '-';
-                    $tempScore = $this->m_score2;
-                }
-                switch ($tempScore) {
-                    case 0:
-                        $score .= 'Love';
-                        break;
-                    case 1:
-                        $score .= 'Fifteen';
-                        break;
-                    case 2:
-                        $score .= 'Thirty';
-                        break;
-                    case 3:
-                        $score .= 'Forty';
-                        break;
-                }
+            return $this->buildScore();
+        }
+        return $score;
+    }
+
+    private function buildScore(): string
+    {
+        $score = '';
+
+        for ($i = 1; $i < 3; $i++) {
+            if ($i === 1) {
+                $tempScore = $this->m_score1;
+            } else {
+                $score .= '-';
+                $tempScore = $this->m_score2;
+            }
+            switch ($tempScore) {
+                case 0:
+                    $score .= 'Love';
+                    break;
+                case 1:
+                    $score .= 'Fifteen';
+                    break;
+                case 2:
+                    $score .= 'Thirty';
+                    break;
+                case 3:
+                    $score .= 'Forty';
+                    break;
             }
         }
+
         return $score;
     }
 }

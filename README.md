@@ -222,3 +222,5 @@ make install
   - `safe guard` at second condition without retuning the `score` variable
   - `safe guard` at third condition without returning the `score` variable
   - `safe guard` at fourth condition without returning the `score` variable
+- To apply `safe guard` in the third contion at `getScore`, the code will directly be extracted since it has got a `loop` which uses the `score` temp variable. Its result will directly be returned without using the `score` variable
+  - The extracted method will eventually use the `score` temp variable. However, it will just be used in the scope of the new function
