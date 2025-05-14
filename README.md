@@ -240,3 +240,4 @@ make install
 - Create property hook for `minusResults`
   - Use it at the first `minusResult` condition
   - Replace the second `minusResult` condition
+  - Replace the third `minusResult` condition
