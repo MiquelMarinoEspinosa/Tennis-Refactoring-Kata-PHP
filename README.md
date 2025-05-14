@@ -261,3 +261,5 @@ make install
     - A loop with `one` iteration is like no loop ^^. Removing the loop and inline its body
     - Transform `case 3` `switch` instruction into the `switch` `default` case
     - Remove `i` `temp variable` and its condition
+- Remove `temp variable` `tempScore` at `buildScore` method
+  - Use `m_score2` instead of `tempScore` at second `partialScore` call
