@@ -260,3 +260,4 @@ make install
     - Update `score` first iteration out of the loop and reduce loop iterations to `1`
     - A loop with `one` iteration is like no loop ^^. Removing the loop and inline its body
     - Transform `case 3` `switch` instruction into the `switch` `default` case
+    - Remove `i` `temp variable` and its condition
