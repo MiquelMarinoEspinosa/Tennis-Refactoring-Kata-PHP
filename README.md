@@ -241,3 +241,4 @@ make install
   - Use it at the first `minusResult` condition
   - Replace the second `minusResult` condition
   - Replace the third `minusResult` condition
+  - Now the coverage and the IDE indicates that the `minusResult` is not used. Therefore, it can be removed

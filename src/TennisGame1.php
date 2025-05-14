@@ -80,9 +80,4 @@ class TennisGame1 implements TennisGame
 
         return $score;
     }
-
-    private function minusResult(): int
-    {
-        return $this->m_score1 - $this->m_score2;
-    }
 }
