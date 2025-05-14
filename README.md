@@ -242,3 +242,5 @@ make install
   - Replace the second `minusResult` condition
   - Replace the third `minusResult` condition
   - Now the coverage and the IDE indicates that the `minusResult` is not used. Therefore, it can be removed
+  - Remove `elseif` and `else` instructions since `guard clauses` are currently used for the sake of reducing complexity
+    - Turn `elseif` at `getScore` method into a simple `if` condition

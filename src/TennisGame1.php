@@ -36,7 +36,9 @@ class TennisGame1 implements TennisGame
                 2 => 'Thirty-All',
                 default => 'Deuce',
             };
-        } elseif ($this->m_score1 >= 4 || $this->m_score2 >= 4) {
+        }
+
+        if ($this->m_score1 >= 4 || $this->m_score2 >= 4) {
             if ($this->minusResult === 1) {
                 return 'Advantage player1';
             } elseif ($this->minusResult === -1) {
