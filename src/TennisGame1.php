@@ -64,11 +64,10 @@ class TennisGame1 implements TennisGame
         switch ($score) {
             case 0:
                 return 'Love';
-            case 1:
-                return 'Fifteen';
         }
 
         return match($score) {
+            1       => 'Fifteen',
             2       => 'Thirty',
             default => 'Forty'
         };
