@@ -52,9 +52,7 @@ class TennisGame1 implements TennisGame
 
     private function buildScore(): string
     {
-        $score = '';
-
-        $score .= $this->partialScore($this->m_score1) . '-' . $this->partialScore($this->m_score2);
+        $score = $this->partialScore($this->m_score1) . '-' . $this->partialScore($this->m_score2);
 
         return $score;
     }
