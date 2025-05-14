@@ -264,3 +264,4 @@ make install
 - Remove `temp variable` `tempScore` at `buildScore` method
   - Use `m_score2` instead of `tempScore` at second `partialScore` call
   - Use `m_score1` intead of `tempScore` at first `partialScore` call
+  - Remove `tempScore` `temp variable`
