@@ -273,3 +273,4 @@ make install
 - Replace simple dot concatenation into `sprintf` at `buildScore`
 - Turn `switch` at `partialScore` into `match`
   - Start with the `default` case
+  - Rename `tempScore` parameter into `score`

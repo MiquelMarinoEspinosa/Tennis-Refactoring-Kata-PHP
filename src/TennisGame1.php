@@ -59,9 +59,9 @@ class TennisGame1 implements TennisGame
         );
     }
 
-    private function partialScore(int $tempScore): string
+    private function partialScore(int $score): string
     {
-        switch ($tempScore) {
+        switch ($score) {
             case 0:
                 return 'Love';
             case 1:
@@ -70,7 +70,7 @@ class TennisGame1 implements TennisGame
                 return 'Thirty';
         }
 
-        return match($tempScore) {
+        return match($score) {
             default => 'Forty'
         };
     }
