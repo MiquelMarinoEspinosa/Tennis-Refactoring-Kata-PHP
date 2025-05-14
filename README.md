@@ -278,3 +278,8 @@ make install
   - Add `Fifteen` case at `match` operator
   - Add `Love` case at `match` operator and remove `switch` instruction
 - Inline `buildScore` at `getScore` method
+- Next steps
+  - Rename `m_score` and `playerName` attributes
+  - Consider using `property hooks` for the three cases at `getScore` method
+    - Otherwise extract `match` into their own methods
+  - Extract condition into methods to make them more understandable
