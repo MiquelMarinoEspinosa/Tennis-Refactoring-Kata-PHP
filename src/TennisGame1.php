@@ -31,9 +31,9 @@ class TennisGame1 implements TennisGame
     {
         if ($this->m_score1 === $this->m_score2) {
             return match ($this->m_score1) {
-                0 => 'Love-All',
-                1 => 'Fifteen-All',
-                2 => 'Thirty-All',
+                0       => 'Love-All',
+                1       => 'Fifteen-All',
+                2       => 'Thirty-All',
                 default => 'Deuce',
             };
         }

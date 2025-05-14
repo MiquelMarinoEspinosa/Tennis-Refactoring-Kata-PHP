@@ -251,3 +251,4 @@ make install
   - Add at `match` operator the third condition
   - Add at `match` operator the second condition
   - Add at `match` operator the first condition
+  - Format `match` operators
