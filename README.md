@@ -248,3 +248,4 @@ make install
 - Replace conditions at second `getScore` condition to use `match` instead
   - Introduce `match` operator with the default condition
   - Turn `elseif` into simple `if` since `guard clause` are used
+  - Add at `match` operator the third condition
