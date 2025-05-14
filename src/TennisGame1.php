@@ -55,8 +55,9 @@ class TennisGame1 implements TennisGame
         $score = '';
 
         $tempScore = $this->m_score1;
+        $score .= $this->partialScore($tempScore);
 
-        for ($i = 1; $i < 3; $i++) {
+        for ($i = 2; $i < 3; $i++) {
             if ($i > 1) {
                 $score .= '-';
                 $tempScore = $this->m_score2;

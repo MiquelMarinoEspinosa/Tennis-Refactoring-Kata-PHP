@@ -257,3 +257,4 @@ make install
   - I will start with stracting the `switch` instruction into its own method and pass as paremeter the `tempScore`
     - Although it has decreased the coverage because the result type hint forces to add a `default` condition at the `switch` instruction, it is not a problem because very likely the method would be `inline` again at some point
     - Initialize `tempScore` out the loop and turn `else` condition into `$i > 1` condition
+    - Update `score` first iteration out of the loop and reduce loop iterations to `1`
