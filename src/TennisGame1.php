@@ -78,10 +78,8 @@ class TennisGame1 implements TennisGame
                 return 'Fifteen';
             case 2:
                 return 'Thirty';
-            case 3:
-                return 'Forty';
             default:
-                return '';
+                return 'Forty';
         }
     }
 }
