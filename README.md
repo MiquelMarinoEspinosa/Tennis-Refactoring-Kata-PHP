@@ -245,3 +245,5 @@ make install
   - Remove `elseif` and `else` instructions since `guard clauses` are currently used for the sake of reducing complexity
     - Turn `elseif` at `getScore` method into a simple `if` condition
     - Remove `else` last condition branch at `getScore` method
+- Replace conditions at second `getScore` condition to use `match` instead
+  - Introduce `match` operator with the default condition
