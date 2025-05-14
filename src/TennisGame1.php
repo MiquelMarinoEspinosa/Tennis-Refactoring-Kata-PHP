@@ -48,9 +48,9 @@ class TennisGame1 implements TennisGame
             } else {
                 return 'Win for player2';
             }
-        } else {
-            return $this->buildScore();
         }
+
+        return $this->buildScore();
     }
 
     private function buildScore(): string
