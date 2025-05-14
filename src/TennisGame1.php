@@ -68,8 +68,10 @@ class TennisGame1 implements TennisGame
                 return 'Fifteen';
             case 2:
                 return 'Thirty';
-            default:
-                return 'Forty';
         }
+
+        return match($tempScore) {
+            default => 'Forty'
+        };
     }
 }
