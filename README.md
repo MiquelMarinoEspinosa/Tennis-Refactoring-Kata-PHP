@@ -258,3 +258,4 @@ make install
     - Although it has decreased the coverage because the result type hint forces to add a `default` condition at the `switch` instruction, it is not a problem because very likely the method would be `inline` again at some point
     - Initialize `tempScore` out the loop and turn `else` condition into `$i > 1` condition
     - Update `score` first iteration out of the loop and reduce loop iterations to `1`
+    - A loop with `one` iteration is like no loop ^^. Removing the loop and inline its body
