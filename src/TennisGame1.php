@@ -66,11 +66,10 @@ class TennisGame1 implements TennisGame
                 return 'Love';
             case 1:
                 return 'Fifteen';
-            case 2:
-                return 'Thirty';
         }
 
         return match($score) {
+            2       => 'Thirty',
             default => 'Forty'
         };
     }

@@ -274,3 +274,4 @@ make install
 - Turn `switch` at `partialScore` into `match`
   - Start with the `default` case
   - Rename `tempScore` parameter into `score`
+  - Add `thirty` case at `match` operator
