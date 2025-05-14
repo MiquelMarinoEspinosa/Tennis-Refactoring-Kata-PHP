@@ -47,11 +47,6 @@ class TennisGame1 implements TennisGame
             };
         }
 
-        return $this->buildScore();
-    }
-
-    private function buildScore(): string
-    {
         return sprintf(
             '%s-%s',
             $this->partialScore($this->m_score1),
