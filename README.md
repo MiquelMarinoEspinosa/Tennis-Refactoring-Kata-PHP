@@ -276,3 +276,4 @@ make install
   - Rename `tempScore` parameter into `score`
   - Add `thirty` case at `match` operator
   - Add `Fifteen` case at `match` operator
+  - Add `Love` case at `match` operator and remove `switch` instruction

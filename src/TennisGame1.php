@@ -61,12 +61,8 @@ class TennisGame1 implements TennisGame
 
     private function partialScore(int $score): string
     {
-        switch ($score) {
-            case 0:
-                return 'Love';
-        }
-
         return match($score) {
+            0       => 'Love',
             1       => 'Fifteen',
             2       => 'Thirty',
             default => 'Forty'
