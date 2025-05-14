@@ -238,4 +238,5 @@ make install
   - Remove `elseif` and `else` instructions
   - Change conditions and `switch` instructions into `match` instructions
 - Create property hook for `minusResults`
-  - Use it at the first `minusResultCondition`
+  - Use it at the first `minusResult` condition
+  - Replace the second `minusResult` condition
