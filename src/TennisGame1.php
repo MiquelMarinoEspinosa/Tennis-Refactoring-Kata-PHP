@@ -10,6 +10,10 @@ class TennisGame1 implements TennisGame
 
     private int $m_score2 = 0;
 
+    private int $minusResult {
+        get => $this->m_score1 - $this->m_score2;
+    }
+
     public function __construct(
         private string $player1Name,
         private string $player2Name
@@ -33,7 +37,7 @@ class TennisGame1 implements TennisGame
                 default => 'Deuce',
             };
         } elseif ($this->m_score1 >= 4 || $this->m_score2 >= 4) {
-            if ($this->minusResult() === 1) {
+            if ($this->minusResult === 1) {
                 return 'Advantage player1';
             } elseif ($this->minusResult() === -1) {
                 return 'Advantage player2';

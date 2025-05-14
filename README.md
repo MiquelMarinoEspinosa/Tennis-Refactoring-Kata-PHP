@@ -237,3 +237,5 @@ make install
   - Create hook for `minusResults` instead of a getter method
   - Remove `elseif` and `else` instructions
   - Change conditions and `switch` instructions into `match` instructions
+- Create property hook for `minusResults`
+  - Use it at the first `minusResultCondition`
