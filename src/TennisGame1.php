@@ -42,13 +42,11 @@ class TennisGame1 implements TennisGame
             if ($this->minusResult === 1) {
                 return 'Advantage player1';
             }
-            if ($this->minusResult === -1) {
-                return 'Advantage player2';
-            }
 
             return match(true) {
-                $this->minusResult >= 2 =>  'Win for player1',
-                default =>                  'Win for player2'
+                $this->minusResult === -1 => 'Advantage player2',
+                $this->minusResult >= 2   => 'Win for player1',
+                default                   => 'Win for player2'
             };
         }
 

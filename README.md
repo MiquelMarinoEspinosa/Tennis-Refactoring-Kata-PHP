@@ -249,3 +249,4 @@ make install
   - Introduce `match` operator with the default condition
   - Turn `elseif` into simple `if` since `guard clause` are used
   - Add at `match` operator the third condition
+  - Add at `match` operator the second condition
