@@ -54,10 +54,10 @@ class TennisGame1 implements TennisGame
     {
         $score = '';
 
+        $tempScore = $this->m_score1;
+
         for ($i = 1; $i < 3; $i++) {
-            if ($i === 1) {
-                $tempScore = $this->m_score1;
-            } else {
+            if ($i > 1) {
                 $score .= '-';
                 $tempScore = $this->m_score2;
             }

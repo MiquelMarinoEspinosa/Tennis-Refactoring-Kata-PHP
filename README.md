@@ -256,3 +256,4 @@ make install
   - It is a loop of just `2` iterations. There must be a way to simplify to remove this loop :/
   - I will start with stracting the `switch` instruction into its own method and pass as paremeter the `tempScore`
     - Although it has decreased the coverage because the result type hint forces to add a `default` condition at the `switch` instruction, it is not a problem because very likely the method would be `inline` again at some point
+    - Initialize `tempScore` out the loop and turn `else` condition into `$i > 1` condition
