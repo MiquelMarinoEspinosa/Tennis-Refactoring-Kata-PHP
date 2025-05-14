@@ -267,3 +267,4 @@ make install
   - Remove `tempScore` `temp variable`
 - Remove `score` `temp variable`
   - Inline previous last `score` update into last `score` update
+  - Inline again new previous last `score` update into last `score` update
