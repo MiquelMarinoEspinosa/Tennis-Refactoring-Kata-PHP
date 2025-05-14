@@ -265,3 +265,5 @@ make install
   - Use `m_score2` instead of `tempScore` at second `partialScore` call
   - Use `m_score1` intead of `tempScore` at first `partialScore` call
   - Remove `tempScore` `temp variable`
+- Remove `score` `temp variable`
+  - Inline previous last `score` update into last `score` update
