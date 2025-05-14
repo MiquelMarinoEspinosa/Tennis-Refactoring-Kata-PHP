@@ -269,3 +269,4 @@ make install
   - Inline previous last `score` update into last `score` update
   - Inline again new previous last `score` update into last `score` update
   - override the `score` value with the second instruction and remove first initialization
+  - Return directly the value of the first instruction and remove the `score` `temp variable`
