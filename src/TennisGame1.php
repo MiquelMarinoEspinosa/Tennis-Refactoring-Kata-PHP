@@ -22,7 +22,7 @@ class TennisGame1 implements TennisGame
 
     public function wonPoint(string $playerName): void
     {
-        $playerName === 'player1'
+        $playerName === $this->player1Name
             ? $this->firstPlayerScore++
             : $this->secondPlayerScore++;
     }

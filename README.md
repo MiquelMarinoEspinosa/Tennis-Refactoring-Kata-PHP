@@ -285,3 +285,12 @@ make install
   - Extract condition into methods to make them more understandable
 - Rename `m_score1` to `firstPlayerScore`
 - Rename `m_score2` to `secondPlayerScore`
+- It has been notice that at `wonPoint` method it is compared the `playerName` parameter with a harcoded string called `player1`. It might be assumed that not all the `first players` would be named as `player1`
+  - Changing without commiting the unit test to pass another name as `first player` different than `player1`
+    - It has also needed to be changed the [TestMaster](./tests/TestMaster.php) to pass another player name since just changing the [TennisGame1Test](./tests/TennisGame1Test.php) was not enough
+    - As expected, it failed :/
+      - Since the [TestMaster](./tests/TestMaster.php) is inherited for all the [tests](./tests/), it can be considered as a main flaw which can mask the fact that the tests does not cover the code in a proper manner
+    - The fix should be to compared the `playerName` parameter at `wonPoint` with the current `player1Name` field to implement a dynamic logic independent of the parameter
+      - May be a some kind of check could be done in case the parameter has a player name which does not belong to the current players game
+      - A better suggestion might be to implement 2 different methods `wonPlayerOne` and `wonPlayerTwo` without parameters and they can be orchestrated by the client. Nevertheless, this approach will not be implemented since it would require to change the tests
+    - Fix applied to compare with `player1Name` value instead with a harcoded string
