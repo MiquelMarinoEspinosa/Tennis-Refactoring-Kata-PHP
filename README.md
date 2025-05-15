@@ -311,3 +311,4 @@ make install
     - Another interesting implementation will be to expose the `players names` from the `TennisGame1`. It might be considered in further iterations
   - Now the unit tests can be used dynamically on the game players' names
 - `extract method` first condition at `getScore` method
+- `extract method` second condition at `getScore` method
