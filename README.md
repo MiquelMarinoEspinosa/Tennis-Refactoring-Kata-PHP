@@ -324,3 +324,4 @@ make install
               - I was too focus just executing the `TennisGame1Test` suite. Fortunately, nothing bad happened ;P
           - Refactor use `sprintf` at `TennisGame1` instead of `dot concatenation`
           - Replace `player2` string at expected result and fix it at `TennisGame1`
+          - Pull up the `fixExpectedResultPlayersNames` at `TestMaster` and make it `protected` to be reusable for the rest of the `test classes`

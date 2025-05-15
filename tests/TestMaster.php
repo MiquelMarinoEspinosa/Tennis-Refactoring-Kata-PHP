@@ -71,4 +71,20 @@ abstract class TestMaster extends TestCase
             }
         }
     }
+
+    protected function fixExpectedResultPlayersNames(
+        string $expectedResult
+    ): string {
+        $fixedExpectedResult = str_replace(
+            'player1',
+            $this->firstPlayer,
+            $expectedResult
+        );
+
+        return str_replace(
+            'player2',
+            $this->secondPlayer,
+            $fixedExpectedResult
+        );
+    }
 }
