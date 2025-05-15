@@ -16,7 +16,7 @@ class TennisGame1 implements TennisGame
 
     public function __construct(
         private string $firstPlayer,
-        private string $player2Name
+        private string $secondPlayer
     ) {
     }
 

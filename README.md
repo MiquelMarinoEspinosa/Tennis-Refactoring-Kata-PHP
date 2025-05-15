@@ -298,3 +298,4 @@ make install
   - My smell was more on the fact that the `player2Name` it is not even used more than in the `__construction` method to write the field :/
   - Also another smell is the `score` suffix for both fields which indicates to have its own responsability. It might be that the `Score` class can manage all the logic and the `Game` just act either as a proxy or orchestrator
 - Rename `player1Name` field to `firstPlayer`
+- Rename `player2Name` field to `secondPlayer`
