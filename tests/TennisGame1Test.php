@@ -19,7 +19,7 @@ class TennisGame1Test extends TestMaster
     {
         parent::setUp();
         $this->firstPlayer = 'Novak Djokovic';
-        $this->secondPlayer = 'player2';
+        $this->secondPlayer = 'Rafa Nadal';
 
         $this->game = new TennisGame1(
             $this->firstPlayer,

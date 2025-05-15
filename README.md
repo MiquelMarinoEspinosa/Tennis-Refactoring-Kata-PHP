@@ -306,4 +306,6 @@ make install
   - Refactor `TestMaster` to use the new fields
     - Refactor `TestMaster` to use the new `firstPlayer` field. Initialized it as `player1` as default value
     - Refactor `TestMaster` to use the new `secondPlayer` field. Initialized it as `player2` as default value
-    - Change `player1` player name at `TennisGame1First` to `Novak Djokovic`
+    - Change `player1` player name at `TennisGame1Test` to `Novak Djokovic`
+    - Change `player2` player name at `TennisGame1Test` to `Rafa Nadal`
+    - Another interesting implementation will be to expose the `players names` from the `TennisGame1`. It might be considered in further iterations
