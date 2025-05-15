@@ -305,3 +305,4 @@ make install
   - Pass the new test fields as parameter to create `TennisGame1`
   - Refactor `TestMaster` to use the new fields
     - Refactor `TestMaster` to use the new `firstPlayer` field. Initialized it as `player1` as default value
+    - Refactor `TestMaster` to use the new `secondPlayer` field. Initialized it as `player2` as default value

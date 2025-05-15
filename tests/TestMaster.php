@@ -10,8 +10,8 @@ use TennisGame\TennisGame;
 abstract class TestMaster extends TestCase
 {
     protected TennisGame $game;
-    protected string $firstPlayer = "player1";
-    protected string $secondPlayer;
+    protected string $firstPlayer = 'player1';
+    protected string $secondPlayer = 'player2';
 
     /**
      * @return mixed[][]
@@ -65,7 +65,9 @@ abstract class TestMaster extends TestCase
                 );
             }
             if ($i < $score2) {
-                $this->game->wonPoint('player2');
+                $this->game->wonPoint(
+                    $this->secondPlayer
+                );
             }
         }
     }
