@@ -6,12 +6,12 @@ namespace TennisGame;
 
 class TennisGame1 implements TennisGame
 {
-    private int $m_score1 = 0;
+    private int $firstPlayerScore = 0;
 
     private int $m_score2 = 0;
 
     private int $minusResult {
-        get => $this->m_score1 - $this->m_score2;
+        get => $this->firstPlayerScore - $this->m_score2;
     }
 
     public function __construct(
@@ -23,14 +23,14 @@ class TennisGame1 implements TennisGame
     public function wonPoint(string $playerName): void
     {
         $playerName === 'player1'
-            ? $this->m_score1++
+            ? $this->firstPlayerScore++
             : $this->m_score2++;
     }
 
     public function getScore(): string
     {
-        if ($this->m_score1 === $this->m_score2) {
-            return match ($this->m_score1) {
+        if ($this->firstPlayerScore === $this->m_score2) {
+            return match ($this->firstPlayerScore) {
                 0       => 'Love-All',
                 1       => 'Fifteen-All',
                 2       => 'Thirty-All',
@@ -38,7 +38,7 @@ class TennisGame1 implements TennisGame
             };
         }
 
-        if ($this->m_score1 >= 4 || $this->m_score2 >= 4) {
+        if ($this->firstPlayerScore >= 4 || $this->m_score2 >= 4) {
             return match(true) {
                 $this->minusResult === 1  => 'Advantage player1',
                 $this->minusResult === -1 => 'Advantage player2',
@@ -49,7 +49,7 @@ class TennisGame1 implements TennisGame
 
         return sprintf(
             '%s-%s',
-            $this->partialScore($this->m_score1),
+            $this->partialScore($this->firstPlayerScore),
             $this->partialScore($this->m_score2)
         );
     }

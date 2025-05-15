@@ -283,3 +283,4 @@ make install
   - Consider using `property hooks` for the three cases at `getScore` method
     - Otherwise extract `match` into their own methods
   - Extract condition into methods to make them more understandable
+- Rename `m_score1` to `firstPlayerScore`
