@@ -294,3 +294,7 @@ make install
       - May be a some kind of check could be done in case the parameter has a player name which does not belong to the current players game
       - A better suggestion might be to implement 2 different methods `wonPlayerOne` and `wonPlayerTwo` without parameters and they can be orchestrated by the client. Nevertheless, this approach will not be implemented since it would require to change the tests
     - Fix applied to compare with `player1Name` value instead with a harcoded string
+- Another thing that just occurred to me it is that it might be used an `array` or even a `class` structure called `Score` for instance to keep track of the `players scores`. For now may be is to much. I would like to see the rest of the `Games` first before jumping into conclusions. For now I will leave it with the current fields
+  - My smell was more on the fact that the `player2Name` it is not even used more than in the `__construction` method to write the field :/
+  - Also another smell is the `score` suffix for both fields which indicates to have its own responsability. It might be that the `Score` class can manage all the logic and the `Game` just act either as a proxy or orchestrator
+- Rename `player1Name` field to `firstPlayer`
