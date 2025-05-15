@@ -323,3 +323,4 @@ make install
             - Remember to execute the whole `unit tests suite`
               - I was too focus just executing the `TennisGame1Test` suite. Fortunately, nothing bad happened ;P
           - Refactor use `sprintf` at `TennisGame1` instead of `dot concatenation`
+          - Replace `player2` string at expected result and fix it at `TennisGame1`

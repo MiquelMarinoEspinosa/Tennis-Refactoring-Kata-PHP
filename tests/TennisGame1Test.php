@@ -41,10 +41,16 @@ class TennisGame1Test extends TestMaster
     private function fixExpectedResultPlayersNames(
         string $expectedResult
     ): string {
-        return str_replace(
+        $fixedExpectedResult = str_replace(
             'player1',
             $this->firstPlayer,
             $expectedResult
+        );
+
+        return str_replace(
+            'player2',
+            $this->secondPlayer,
+            $fixedExpectedResult
         );
     }
 }

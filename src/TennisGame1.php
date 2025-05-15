@@ -41,9 +41,9 @@ class TennisGame1 implements TennisGame
         if ($this->hasEitherPlayerMoreThanThreePoints()) {
             return match(true) {
                 $this->minusResult === 1  => sprintf('Advantage %s', $this->firstPlayer),
-                $this->minusResult === -1 => 'Advantage player2',
+                $this->minusResult === -1 => sprintf('Advantage %s', $this->secondPlayer),
                 $this->minusResult >= 2   => sprintf('Win for %s', $this->firstPlayer),
-                default                   => 'Win for player2'
+                default                   => sprintf('Win for %s', $this->secondPlayer)
             };
         }
 
