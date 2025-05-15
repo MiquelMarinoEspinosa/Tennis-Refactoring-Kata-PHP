@@ -31,6 +31,20 @@ class TennisGame1Test extends TestMaster
     public function testScores(int $score1, int $score2, string $expectedResult): void
     {
         $this->seedScores($score1, $score2);
-        $this->assertSame($expectedResult, $this->game->getScore());
+        $this->assertSame(
+            $this->fixExpectedResultPlayersNames(
+                $expectedResult
+            ), $this->game->getScore()
+        );
+    }
+
+    private function fixExpectedResultPlayersNames(
+        string $expectedResult
+    ): string {
+        return str_replace(
+            'player1',
+            $this->firstPlayer,
+            $expectedResult
+        );
     }
 }

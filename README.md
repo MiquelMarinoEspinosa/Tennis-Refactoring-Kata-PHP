@@ -312,3 +312,13 @@ make install
   - Now the unit tests can be used dynamically on the game players' names
 - `extract method` first condition at `getScore` method
 - `extract method` second condition at `getScore` method
+- it has just been noticed that there are still hardcoded code at both `TennisGame1` and `TennisMaster` which still reference to the `player1` and `player2` :F
+  - Refactor `TestMaster` to use `firstPlayer` field at `data provider` instead of hardcoded `player1`
+    - It cannot dynamically get changed at the `data provider` :(
+      - The fields are not initialized when the `data provider` is executed
+        - It executes before the `setUp` method and it would require `static` fields anyway
+        - The expected message it is used at the assertion in the `TennisGame1Test` and I assume that also in the rest of the tests
+        - On not very elegant way to solve it is to use `string replacement` just before the assertion is done
+          - Create a `private` method at `TennisGame1` to replace `player1` with the current `firstPlayer` name and also change it at the `TennisGame1` to make the test pass
+            - Remember to execute the whole `unit tests suite`
+              - I was too focus just executing the `TennisGame1Test` suite. Fortunately, nothing bad happened ;P
