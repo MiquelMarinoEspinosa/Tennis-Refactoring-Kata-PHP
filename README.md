@@ -325,3 +325,7 @@ make install
           - Refactor use `sprintf` at `TennisGame1` instead of `dot concatenation`
           - Replace `player2` string at expected result and fix it at `TennisGame1`
           - Pull up the `fixExpectedResultPlayersNames` at `TestMaster` and make it `protected` to be reusable for the rest of the `test classes`
+- Next steps
+  - Use `hook` property to compute the `score`
+  - Extract `match` logic for the first 3 cases
+  - At this point the `TennisGame1` refactor might be considered done and I could jump to refactor the `TennisGame2` ^-^
