@@ -322,3 +322,4 @@ make install
           - Create a `private` method at `TennisGame1` to replace `player1` with the current `firstPlayer` name and also change it at the `TennisGame1` to make the test pass
             - Remember to execute the whole `unit tests suite`
               - I was too focus just executing the `TennisGame1Test` suite. Fortunately, nothing bad happened ;P
+          - Refactor use `sprintf` at `TennisGame1` instead of `dot concatenation`
