@@ -299,3 +299,5 @@ make install
   - Also another smell is the `score` suffix for both fields which indicates to have its own responsability. It might be that the `Score` class can manage all the logic and the `Game` just act either as a proxy or orchestrator
 - Rename `player1Name` field to `firstPlayer`
 - Rename `player2Name` field to `secondPlayer`
+- Before going any further, it would be great to fix the hardcoded `player1` and `player2` at [TestMaster](./tests/TestMaster.php) as it is suggested at the initial kata's documentation. The ideas is to introduce the fix first at [TennisGame1Test](./tests/TennisGame1Test.php) backward compatible with the rest of the tests which will be refactor in further iterations
+  - Introduce `protected` fields at `TestMaster` to save players' names

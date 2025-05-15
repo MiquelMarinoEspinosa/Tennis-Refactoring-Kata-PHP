@@ -10,6 +10,8 @@ use TennisGame\TennisGame;
 abstract class TestMaster extends TestCase
 {
     protected TennisGame $game;
+    protected string $firstPlayer;
+    protected string $secondPlayer;
 
     /**
      * @return mixed[][]
