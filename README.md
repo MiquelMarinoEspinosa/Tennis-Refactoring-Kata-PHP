@@ -302,3 +302,4 @@ make install
 - Before going any further, it would be great to fix the hardcoded `player1` and `player2` at [TestMaster](./tests/TestMaster.php) as it is suggested at the initial kata's documentation. The ideas is to introduce the fix first at [TennisGame1Test](./tests/TennisGame1Test.php) backward compatible with the rest of the tests which will be refactor in further iterations
   - Introduce `protected` fields at `TestMaster` to save players' names
   - Update the new fields at `setUp` method at `TennisGame1Test` class
+  - Pass the new test fields as parameter to create `TennisGame1`

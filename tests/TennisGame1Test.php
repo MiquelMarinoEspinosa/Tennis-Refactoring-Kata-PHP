@@ -21,7 +21,10 @@ class TennisGame1Test extends TestMaster
         $this->firstPlayer = 'player1';
         $this->secondPlayer = 'player2';
 
-        $this->game = new TennisGame1('player1', 'player2');
+        $this->game = new TennisGame1(
+            $this->firstPlayer,
+            $this->secondPlayer
+        );
     }
 
     #[DataProvider('data')]
