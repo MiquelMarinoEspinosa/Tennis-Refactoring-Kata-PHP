@@ -303,3 +303,5 @@ make install
   - Introduce `protected` fields at `TestMaster` to save players' names
   - Update the new fields at `setUp` method at `TennisGame1Test` class
   - Pass the new test fields as parameter to create `TennisGame1`
+  - Refactor `TestMaster` to use the new fields
+    - Refactor `TestMaster` to use the new `firstPlayer` field. Initialized it as `player1` as default value
