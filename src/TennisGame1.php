@@ -29,7 +29,7 @@ class TennisGame1 implements TennisGame
 
     public function getScore(): string
     {
-        if ($this->firstPlayerScore === $this->secondPlayerScore) {
+        if ($this->isTheGameEqualized()) {
             return match ($this->firstPlayerScore) {
                 0       => 'Love-All',
                 1       => 'Fifteen-All',
@@ -62,5 +62,10 @@ class TennisGame1 implements TennisGame
             2       => 'Thirty',
             default => 'Forty'
         };
+    }
+
+    private function isTheGameEqualized(): bool
+    {
+        return $this->firstPlayerScore === $this->secondPlayerScore;
     }
 }

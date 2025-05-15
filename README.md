@@ -309,3 +309,5 @@ make install
     - Change `player1` player name at `TennisGame1Test` to `Novak Djokovic`
     - Change `player2` player name at `TennisGame1Test` to `Rafa Nadal`
     - Another interesting implementation will be to expose the `players names` from the `TennisGame1`. It might be considered in further iterations
+  - Now the unit tests can be used dynamically on the game players' names
+- `extract method` first condition at `getScore` method
