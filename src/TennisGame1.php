@@ -8,10 +8,10 @@ class TennisGame1 implements TennisGame
 {
     private int $firstPlayerScore = 0;
 
-    private int $m_score2 = 0;
+    private int $secondPlayerScore = 0;
 
     private int $minusResult {
-        get => $this->firstPlayerScore - $this->m_score2;
+        get => $this->firstPlayerScore - $this->secondPlayerScore;
     }
 
     public function __construct(
@@ -24,12 +24,12 @@ class TennisGame1 implements TennisGame
     {
         $playerName === 'player1'
             ? $this->firstPlayerScore++
-            : $this->m_score2++;
+            : $this->secondPlayerScore++;
     }
 
     public function getScore(): string
     {
-        if ($this->firstPlayerScore === $this->m_score2) {
+        if ($this->firstPlayerScore === $this->secondPlayerScore) {
             return match ($this->firstPlayerScore) {
                 0       => 'Love-All',
                 1       => 'Fifteen-All',
@@ -38,7 +38,7 @@ class TennisGame1 implements TennisGame
             };
         }
 
-        if ($this->firstPlayerScore >= 4 || $this->m_score2 >= 4) {
+        if ($this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4) {
             return match(true) {
                 $this->minusResult === 1  => 'Advantage player1',
                 $this->minusResult === -1 => 'Advantage player2',
@@ -50,7 +50,7 @@ class TennisGame1 implements TennisGame
         return sprintf(
             '%s-%s',
             $this->partialScore($this->firstPlayerScore),
-            $this->partialScore($this->m_score2)
+            $this->partialScore($this->secondPlayerScore)
         );
     }
 

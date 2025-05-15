@@ -284,3 +284,4 @@ make install
     - Otherwise extract `match` into their own methods
   - Extract condition into methods to make them more understandable
 - Rename `m_score1` to `firstPlayerScore`
+- Rename `m_score2` to `secondPlayerScore`
