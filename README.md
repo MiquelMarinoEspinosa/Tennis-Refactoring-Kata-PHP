@@ -352,3 +352,4 @@ make install
   - introduce `guard clause` at `isDraw` mapping score message logic
     - Surprisingly has applied all cases just in one shot ^^
     - Remove all `match` cases but the `default` case
+  - directly return the `default` case and remove the `match` operator

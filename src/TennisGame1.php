@@ -43,9 +43,7 @@ class TennisGame1 implements TennisGame
                 return self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] . '-All';
             }
 
-            return match ($this->firstPlayerScore) {
-                default => 'Deuce',
-            };
+            return 'Deuce';
         }
 
         if ($this->isEitherAdvantageOrWin()) {
