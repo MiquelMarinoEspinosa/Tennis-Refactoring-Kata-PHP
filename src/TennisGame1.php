@@ -91,7 +91,7 @@ class TennisGame1 implements TennisGame
         return sprintf(
             '%s-%s',
             $this->playerScore($this->firstPlayerScore),
-            self::SCORE_MESSAGE_MAP[$this->secondPlayerScore] ?? 'Forty'
+            $this->playerScore($this->secondPlayerScore)
         );
     }
 

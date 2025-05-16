@@ -362,3 +362,4 @@ make install
   - Extract final return message into a method called `playersScore`
   - Extract `playersScore` duplicated logic into a new method called `playerScore`
     - Extract `firstPlayer` logic
+    - Apply logic to the `secondPlayer`
