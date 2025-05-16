@@ -15,7 +15,8 @@ class TennisGame1 implements TennisGame
      */
     private const array SCORE_MESSAGE_MAP = [
         0 => 'Love',
-        1 => 'Fifteen'
+        1 => 'Fifteen',
+        2 => 'Thirty'
     ];
 
     private int $minusResult {
@@ -69,7 +70,6 @@ class TennisGame1 implements TennisGame
         }
 
         return match($score) {
-            2       => 'Thirty',
             default => 'Forty'
         };
     }

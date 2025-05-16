@@ -339,3 +339,4 @@ make install
   - Map score message for `0 -> love` into a constant
   - Apply logic for `1 -> Fifteen`
   - Apply `guard clause` for the already mapped cases and remove cases from the match operator
+  - Apply logic for `2 -> Thirty`
