@@ -365,3 +365,4 @@ make install
     - Apply logic to the `secondPlayer`
 - Remove `message` methods suffixes method's name
   - Remove suffix at `drawMessage`
+  - Remove suffix at `advantageOrWinMessage`

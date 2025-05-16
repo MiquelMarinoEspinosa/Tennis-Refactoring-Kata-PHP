@@ -43,7 +43,7 @@ class TennisGame1 implements TennisGame
         }
 
         if ($this->isAdvantageOrWin()) {
-            return $this->advantageOrWinMessage();
+            return $this->advantageOrWin();
         }
 
         return $this->playersScore();
@@ -66,7 +66,7 @@ class TennisGame1 implements TennisGame
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }
 
-    private function advantageOrWinMessage(): string
+    private function advantageOrWin(): string
     {
         return match(true) {
             $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
