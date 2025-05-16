@@ -46,11 +46,7 @@ class TennisGame1 implements TennisGame
             return $this->advantageOrWinMessage();
         }
 
-        return sprintf(
-            '%s-%s',
-            self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] ?? 'Forty',
-            self::SCORE_MESSAGE_MAP[$this->secondPlayerScore] ?? 'Forty'
-        );
+        return $this->playersScore();
     }
 
     private function isDraw(): bool
@@ -88,5 +84,14 @@ class TennisGame1 implements TennisGame
     private function winFor(string $player): string
     {
         return sprintf('Win for %s', $player);
+    }
+
+    private function playersScore(): string
+    {
+        return sprintf(
+            '%s-%s',
+            self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] ?? 'Forty',
+            self::SCORE_MESSAGE_MAP[$this->secondPlayerScore] ?? 'Forty'
+        );
     }
 }

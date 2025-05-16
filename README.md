@@ -359,3 +359,4 @@ make install
   - Extract `isDraw` logic into a method called `drawMessage`
   - Refactor `isEitherAdvantageOrWin` method's name to `isAdvantageOrWin`
   - Extract `isAdvantageOrWin` logic into a method call `advantageOrWinMessage`
+  - Extract final return message into a method called `playersScore`
