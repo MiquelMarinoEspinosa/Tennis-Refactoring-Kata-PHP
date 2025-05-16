@@ -69,9 +69,7 @@ class TennisGame1 implements TennisGame
             return self::SCORE_MESSAGE_MAP[$score];
         }
 
-        return match($score) {
-            default => 'Forty'
-        };
+        return 'Forty';
     }
 
     private function isTheGameEqualized(): bool
