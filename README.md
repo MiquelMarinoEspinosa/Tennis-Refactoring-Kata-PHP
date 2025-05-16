@@ -354,3 +354,4 @@ make install
     - Remove all `match` cases but the `default` case
   - directly return the `default` case and remove the `match` operator
   - introduce `ternary operator`
+  - use `sprintf` instead of `dot concatenation`

@@ -40,7 +40,7 @@ class TennisGame1 implements TennisGame
     {
         if ($this->isDraw()) {
             return self::SCORE_MESSAGE_MAP[$this->firstPlayerScore]
-                ? self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] . '-All'
+                ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
                 : 'Deuce';
         }
 
