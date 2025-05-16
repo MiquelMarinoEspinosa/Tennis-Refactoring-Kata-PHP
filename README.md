@@ -357,3 +357,4 @@ make install
   - use `sprintf` instead of `dot concatenation`
 - `extract method` logic conditions
   - Extract `isDraw` logic into a method called `drawMessage`
+  - Refactor `isEitherAdvantageOrWin` method's name to `isAdvantageOrWin`
