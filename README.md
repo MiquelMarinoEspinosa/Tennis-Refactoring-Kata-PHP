@@ -382,4 +382,8 @@ make install
 - Introduce `scoreBoard` `property hook`
   - locate `draw` logic there and return the `property hook` when `isDraw`
   - move `advantageOrWin` logic to the `property hook`
-  - move last
+  - move last return logic to the `property hook`
+  - return directly the `scoreBoard` `property hook` value at the `getScore` method
+    - something that a do not really fancy it is that the coverage for the `property hook getter` it is not shown :/
+    - I willll keep it as it is because the `property hook` strategy can have great value in future iterations. Besides I am sure that in future `phpunit` versions, this issue will be fixed somehow :)
+

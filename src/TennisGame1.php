@@ -52,10 +52,6 @@ class TennisGame1 implements TennisGame
 
     public function getScore(): string
     {
-        if ($this->isDraw() || $this->isAdvantageOrWin()) {
-            return $this->scoreBoard;
-        }
-
         return $this->scoreBoard;
     }
 
