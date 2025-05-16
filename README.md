@@ -329,3 +329,5 @@ make install
   - Use `hook` property to compute the `score`
   - Extract `match` logic for the first 3 cases
   - At this point the `TennisGame1` refactor might be considered done and I could jump to refactor the `TennisGame2` ^-^
+- Extract `advantatge` message build into a new method
+  - Extract logic for `firstPlayer`

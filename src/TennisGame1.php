@@ -40,7 +40,7 @@ class TennisGame1 implements TennisGame
 
         if ($this->hasEitherPlayerMoreThanThreePoints()) {
             return match(true) {
-                $this->minusResult === 1  => sprintf('Advantage %s', $this->firstPlayer),
+                $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
                 $this->minusResult === -1 => sprintf('Advantage %s', $this->secondPlayer),
                 $this->minusResult >= 2   => sprintf('Win for %s', $this->firstPlayer),
                 default                   => sprintf('Win for %s', $this->secondPlayer)
@@ -72,5 +72,10 @@ class TennisGame1 implements TennisGame
     private function hasEitherPlayerMoreThanThreePoints(): bool
     {
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
+    }
+
+    private function advantageFor(string $player): string
+    {
+        return sprintf('Advantage %s', $player);
     }
 }
