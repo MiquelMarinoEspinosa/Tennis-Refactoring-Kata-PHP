@@ -38,7 +38,7 @@ class TennisGame1 implements TennisGame
 
     public function getScore(): string
     {
-        if ($this->isTheGameEqualized()) {
+        if ($this->isDraw()) {
             return match ($this->firstPlayerScore) {
                 0       => self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] . '-All',
                 1       => 'Fifteen-All',
@@ -63,7 +63,7 @@ class TennisGame1 implements TennisGame
         );
     }
 
-    private function isTheGameEqualized(): bool
+    private function isDraw(): bool
     {
         return $this->firstPlayerScore === $this->secondPlayerScore;
     }
