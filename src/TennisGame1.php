@@ -43,7 +43,7 @@ class TennisGame1 implements TennisGame
                 $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
                 $this->minusResult === -1 => $this->advantageFor($this->secondPlayer),
                 $this->minusResult >= 2   => $this->winFor($this->firstPlayer),
-                default                   => sprintf('Win for %s', $this->secondPlayer)
+                default                   => $this->winFor($this->secondPlayer)
             };
         }
 

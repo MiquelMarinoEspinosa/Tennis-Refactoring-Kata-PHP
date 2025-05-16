@@ -331,6 +331,7 @@ make install
   - At this point the `TennisGame1` refactor might be considered done and I could jump to refactor the `TennisGame2` ^-^
 - `extract method` `advantatge` build message
   - Extract logic for `firstPlayer`
-  - Applay also the logic for `secondPlayer`
+  - Apply the logic also for `secondPlayer`
 - `extract method` `win for` build message
   - Extract logic for `firstPlayer`
+  - Apply the logic also for the `secondPlayer`
