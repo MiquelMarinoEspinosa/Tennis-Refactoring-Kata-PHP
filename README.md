@@ -341,3 +341,4 @@ make install
   - Apply `guard clause` for the already mapped cases and remove cases from the match operator
   - Apply logic for `2 -> Thirty`
   - Remove `match` operator and directly return `default`
+  - Apply `ternary operator`

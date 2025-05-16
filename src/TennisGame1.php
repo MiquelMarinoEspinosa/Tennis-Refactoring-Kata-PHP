@@ -65,11 +65,7 @@ class TennisGame1 implements TennisGame
 
     private function partialScore(int $score): string
     {
-        if (isset(self::SCORE_MESSAGE_MAP[$score])) {
-            return self::SCORE_MESSAGE_MAP[$score];
-        }
-
-        return 'Forty';
+        return self::SCORE_MESSAGE_MAP[$score] ?? 'Forty';
     }
 
     private function isTheGameEqualized(): bool
