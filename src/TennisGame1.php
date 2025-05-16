@@ -58,7 +58,7 @@ class TennisGame1 implements TennisGame
 
         return sprintf(
             '%s-%s',
-            $this->partialScore($this->firstPlayerScore),
+            self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] ?? 'Forty',
             $this->partialScore($this->secondPlayerScore)
         );
     }

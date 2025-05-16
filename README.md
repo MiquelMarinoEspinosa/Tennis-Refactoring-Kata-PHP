@@ -342,3 +342,5 @@ make install
   - Apply logic for `2 -> Thirty`
   - Remove `match` operator and directly return `default`
   - Apply `ternary operator`
+  - `inline method` `partialScore` in `getScore` method
+    - inline `firstPlayer`
