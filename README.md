@@ -386,4 +386,6 @@ make install
   - return directly the `scoreBoard` `property hook` value at the `getScore` method
     - something that a do not really fancy it is that the coverage for the `property hook getter` it is not shown :/
     - I willll keep it as it is because the `property hook` strategy can have great value in future iterations. Besides I am sure that in future `phpunit` versions, this issue will be fixed somehow :)
-
+- Next steps
+  - At this point the `TennisGame1` refactor can be considered finished :D
+  - Let's start the refactor of `TennisGame2`
