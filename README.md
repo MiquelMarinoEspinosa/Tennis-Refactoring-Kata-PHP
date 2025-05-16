@@ -366,3 +366,6 @@ make install
 - Remove `message` methods suffixes method's name
   - Remove suffix at `drawMessage`
   - Remove suffix at `advantageOrWinMessage`
+- 2 `warnings` came up when the `unit tests` are executed
+  - The cause is undefined index at `self::SCORE_MESSAGE_MAP[$this->firstPlayerScore]` at `draw` method
+  - Add `isset` for an extra check warning suppresing

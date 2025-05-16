@@ -56,7 +56,7 @@ class TennisGame1 implements TennisGame
 
     private function draw(): string
     {
-        return self::SCORE_MESSAGE_MAP[$this->firstPlayerScore]
+        return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
             ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
             : 'Deuce';
     }
