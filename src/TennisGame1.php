@@ -29,7 +29,11 @@ class TennisGame1 implements TennisGame
                 return $this->draw();
             }
 
-            return $this->advantageOrWin();
+            if ($this->isAdvantageOrWin()) {
+                return $this->advantageOrWin();
+            }
+
+            return $this->playersScore();
         }
     }
 
@@ -52,7 +56,7 @@ class TennisGame1 implements TennisGame
             return $this->scoreBoard;
         }
 
-        return $this->playersScore();
+        return $this->scoreBoard;
     }
 
     private function isDraw(): bool
