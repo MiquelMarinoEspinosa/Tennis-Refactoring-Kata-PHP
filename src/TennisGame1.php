@@ -59,13 +59,8 @@ class TennisGame1 implements TennisGame
         return sprintf(
             '%s-%s',
             self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] ?? 'Forty',
-            $this->partialScore($this->secondPlayerScore)
+            self::SCORE_MESSAGE_MAP[$this->secondPlayerScore] ?? 'Forty'
         );
-    }
-
-    private function partialScore(int $score): string
-    {
-        return self::SCORE_MESSAGE_MAP[$score] ?? 'Forty';
     }
 
     private function isTheGameEqualized(): bool

@@ -344,3 +344,4 @@ make install
   - Apply `ternary operator`
   - `inline method` `partialScore` in `getScore` method
     - inline `firstPlayer`
+    - inline `secondPlayer` and remove `partialScore` method
