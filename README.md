@@ -338,3 +338,4 @@ make install
 - Extract `match` logic for the first 3 cases at `partialScore`
   - Map score message for `0 -> love` into a constant
   - Apply logic for `1 -> Fifteen`
+  - Apply `guard clause` for the already mapped cases and remove cases from the match operator
