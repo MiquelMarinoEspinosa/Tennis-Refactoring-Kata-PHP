@@ -40,7 +40,7 @@ class TennisGame1 implements TennisGame
     {
         if ($this->isTheGameEqualized()) {
             return match ($this->firstPlayerScore) {
-                0       => 'Love-All',
+                0       => self::SCORE_MESSAGE_MAP[$this->firstPlayerScore] . '-All',
                 1       => 'Fifteen-All',
                 2       => 'Thirty-All',
                 default => 'Deuce',

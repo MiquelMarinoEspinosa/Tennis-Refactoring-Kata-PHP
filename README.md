@@ -345,3 +345,5 @@ make install
   - `inline method` `partialScore` in `getScore` method
     - inline `firstPlayer`
     - inline `secondPlayer` and remove `partialScore` method
+- Extract `match` logic for `isTheGameEqualized` using the current score message mapping
+  - use mapping for the first case `0 -> Love-All`
