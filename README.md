@@ -347,4 +347,5 @@ make install
     - inline `secondPlayer` and remove `partialScore` method
 - Extract `match` logic for `isTheGameEqualized` using the current score message mapping
   - use mapping for the first case `0 -> Love-All`
-  - refactor change `isTheGameEqualized` name to `isDraw`
+  - refactor change `isTheGameEqualized` method's name to `isDraw`
+  - refactor change `hasEitherPlayerMoreThanThreePoints` method's name to `isEitherAdvantageOrWin`

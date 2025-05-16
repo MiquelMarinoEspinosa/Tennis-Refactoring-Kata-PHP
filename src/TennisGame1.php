@@ -47,7 +47,7 @@ class TennisGame1 implements TennisGame
             };
         }
 
-        if ($this->hasEitherPlayerMoreThanThreePoints()) {
+        if ($this->isEitherAdvantageOrWin()) {
             return match(true) {
                 $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
                 $this->minusResult === -1 => $this->advantageFor($this->secondPlayer),
@@ -68,7 +68,7 @@ class TennisGame1 implements TennisGame
         return $this->firstPlayerScore === $this->secondPlayerScore;
     }
 
-    private function hasEitherPlayerMoreThanThreePoints(): bool
+    private function isEitherAdvantageOrWin(): bool
     {
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }
