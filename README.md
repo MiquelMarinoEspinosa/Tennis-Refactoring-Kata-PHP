@@ -349,3 +349,6 @@ make install
   - use mapping for the first case `0 -> Love-All`
   - refactor change `isTheGameEqualized` method's name to `isDraw`
   - refactor change `hasEitherPlayerMoreThanThreePoints` method's name to `isEitherAdvantageOrWin`
+  - introduce `guard clause` at `isDraw` mapping score message logic
+    - Surprisingly has applied all cases just in one shot ^^
+    - Remove all `match` cases but the `default` case
