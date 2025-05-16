@@ -363,3 +363,5 @@ make install
   - Extract `playersScore` duplicated logic into a new method called `playerScore`
     - Extract `firstPlayer` logic
     - Apply logic to the `secondPlayer`
+- Remove `message` methods suffixes method's name
+  - Remove suffix at `drawMessage`
