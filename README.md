@@ -353,3 +353,4 @@ make install
     - Surprisingly has applied all cases just in one shot ^^
     - Remove all `match` cases but the `default` case
   - directly return the `default` case and remove the `match` operator
+  - introduce `ternary operator`
