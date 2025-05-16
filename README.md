@@ -337,3 +337,4 @@ make install
   - Apply the logic also for the `secondPlayer`
 - Extract `match` logic for the first 3 cases at `partialScore`
   - Map score message for `0 -> love` into a constant
+  - Apply logic for `1 -> Fifteen`
