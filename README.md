@@ -358,3 +358,4 @@ make install
 - `extract method` logic conditions
   - Extract `isDraw` logic into a method called `drawMessage`
   - Refactor `isEitherAdvantageOrWin` method's name to `isAdvantageOrWin`
+  - Extract `isAdvantageOrWin` logic into a method call `advantageOrWinMessage`

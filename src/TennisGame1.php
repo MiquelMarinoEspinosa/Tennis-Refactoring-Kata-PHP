@@ -43,12 +43,7 @@ class TennisGame1 implements TennisGame
         }
 
         if ($this->isAdvantageOrWin()) {
-            return match(true) {
-                $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
-                $this->minusResult === -1 => $this->advantageFor($this->secondPlayer),
-                $this->minusResult >= 2   => $this->winFor($this->firstPlayer),
-                default                   => $this->winFor($this->secondPlayer)
-            };
+            return $this->advantageOrWinMessage();
         }
 
         return sprintf(
@@ -73,6 +68,16 @@ class TennisGame1 implements TennisGame
     private function isAdvantageOrWin(): bool
     {
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
+    }
+
+    private function advantageOrWinMessage(): string
+    {
+        return match(true) {
+            $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
+            $this->minusResult === -1 => $this->advantageFor($this->secondPlayer),
+            $this->minusResult >= 2   => $this->winFor($this->firstPlayer),
+            default                   => $this->winFor($this->secondPlayer)
+        };
     }
 
     private function advantageFor(string $player): string
