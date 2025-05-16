@@ -24,7 +24,13 @@ class TennisGame1 implements TennisGame
     }
 
     private string $scoreBoard {
-        get => $this->draw();
+        get {
+            if ($this->isDraw()) {
+                return $this->draw();
+            }
+
+            return $this->advantageOrWin();
+        }
     }
 
     public function __construct(
@@ -42,12 +48,8 @@ class TennisGame1 implements TennisGame
 
     public function getScore(): string
     {
-        if ($this->isDraw()) {
+        if ($this->isDraw() || $this->isAdvantageOrWin()) {
             return $this->scoreBoard;
-        }
-
-        if ($this->isAdvantageOrWin()) {
-            return $this->advantageOrWin();
         }
 
         return $this->playersScore();

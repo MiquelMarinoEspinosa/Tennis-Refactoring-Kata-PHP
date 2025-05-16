@@ -379,4 +379,6 @@ make install
     - Also it has been identified part of the logic which could be extracted into another class called `Score` or `PlayersScore`. I guess the first option is better
       - That was notice dues to the `score` suffix for 2 fields and also because at the `TennisGame1` the `presentation` and `business` logic is coupled. It would be great to move the `buisness` logic - even is kind of small - to another class
   - For now I will stick to the already planned refactors and reflect on this refactors in further iterations
-- Introduce `scoreBoard` `hook property`, locate `draw` logic there and return the `hook` property when `isDraw`
+- Introduce `scoreBoard` `hook property`
+  - locate `draw` logic there and return the `hook` property when `isDraw`
+  - move `advantageOrWin` logic to the `hook property`
