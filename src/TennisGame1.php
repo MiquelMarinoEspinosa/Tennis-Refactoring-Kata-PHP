@@ -10,6 +10,13 @@ class TennisGame1 implements TennisGame
 
     private int $secondPlayerScore = 0;
 
+    /**
+     * @var array<string>
+     */
+    private const array SCORE_MESSAGE_MAP = [
+        0 => 'Love'
+    ];
+
     private int $minusResult {
         get => $this->firstPlayerScore - $this->secondPlayerScore;
     }
@@ -57,7 +64,7 @@ class TennisGame1 implements TennisGame
     private function partialScore(int $score): string
     {
         return match($score) {
-            0       => 'Love',
+            0       => self::SCORE_MESSAGE_MAP[$score],
             1       => 'Fifteen',
             2       => 'Thirty',
             default => 'Forty'

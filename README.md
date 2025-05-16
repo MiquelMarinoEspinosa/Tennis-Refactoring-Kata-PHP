@@ -335,3 +335,5 @@ make install
 - `extract method` `win for` build message
   - Extract logic for `firstPlayer`
   - Apply the logic also for the `secondPlayer`
+- Extract `match` logic for the first 3 cases at `partialScore`
+  - Map score message for `0 -> love` into a constant
