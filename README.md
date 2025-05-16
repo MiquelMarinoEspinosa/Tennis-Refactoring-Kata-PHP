@@ -355,3 +355,5 @@ make install
   - directly return the `default` case and remove the `match` operator
   - introduce `ternary operator`
   - use `sprintf` instead of `dot concatenation`
+- `extract method` logic conditions
+  - Extract `isDraw` logic into a method called `drawMessage`

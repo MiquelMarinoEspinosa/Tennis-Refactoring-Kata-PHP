@@ -39,9 +39,7 @@ class TennisGame1 implements TennisGame
     public function getScore(): string
     {
         if ($this->isDraw()) {
-            return self::SCORE_MESSAGE_MAP[$this->firstPlayerScore]
-                ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
-                : 'Deuce';
+            return $this->drawMessage();
         }
 
         if ($this->isEitherAdvantageOrWin()) {
@@ -63,6 +61,13 @@ class TennisGame1 implements TennisGame
     private function isDraw(): bool
     {
         return $this->firstPlayerScore === $this->secondPlayerScore;
+    }
+
+    private function drawMessage(): string
+    {
+        return self::SCORE_MESSAGE_MAP[$this->firstPlayerScore]
+            ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
+            : 'Deuce';
     }
 
     private function isEitherAdvantageOrWin(): bool
