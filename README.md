@@ -369,3 +369,14 @@ make install
 - 2 `warnings` came up when the `unit tests` are executed
   - The cause is undefined index at `self::SCORE_MESSAGE_MAP[$this->firstPlayerScore]` at `draw` method
   - Add `isset` for an extra check warning suppresing
+- Middleway considerations
+  - Now the code look much more modular and it is easier to understand
+    -  The function are smalled, they use not a lot of parameters - most of the times 0 - and most importantly they reveal their intent
+  - I thought that very likely the rest of the `Games` have exactly the same business logic as `TennisGame1`
+    - That woud be told by the `unit tests`
+      - In case the `unit tests Games` use the same `data provider`, chances are that the logic can be share across the `Games`
+      - In that case, a super class would be created, pull the current `TennisGame1` logic up and reuse it at the rest of the `Games`
+    - Also it has been identified part of the logic which could be extracted into another class called `Score` or `PlayersScore`. I guess the first option is better
+      - That was notice dues to the `score` suffix for 2 fields and also because at the `TennisGame1` the `presentation` and `business` logic is coupled. It would be great to move the `buisness` logic - even is kind of small - to another class
+  - For now I will stick to the already planned refactors and reflect on this refactors in further iterations
+- Introduce `scoreBoard` `hook property`, locate `draw` logic there and return the `hook` property when `isDraw`

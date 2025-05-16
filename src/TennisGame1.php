@@ -23,6 +23,10 @@ class TennisGame1 implements TennisGame
         get => $this->firstPlayerScore - $this->secondPlayerScore;
     }
 
+    private string $scoreBoard {
+        get => $this->draw();
+    }
+
     public function __construct(
         private string $firstPlayer,
         private string $secondPlayer
@@ -39,7 +43,7 @@ class TennisGame1 implements TennisGame
     public function getScore(): string
     {
         if ($this->isDraw()) {
-            return $this->draw();
+            return $this->scoreBoard;
         }
 
         if ($this->isAdvantageOrWin()) {
@@ -95,8 +99,8 @@ class TennisGame1 implements TennisGame
         );
     }
 
-    private function playerScore(int $score): string
+    private function playerScore(int $scoreBoard): string
     {
-        return self::SCORE_MESSAGE_MAP[$score] ?? 'Forty';
+        return self::SCORE_MESSAGE_MAP[$scoreBoard] ?? 'Forty';
     }
 }
