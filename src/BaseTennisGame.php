@@ -23,7 +23,7 @@ abstract class BaseTennisGame implements TennisGame
         get => $this->firstPlayerScore - $this->secondPlayerScore;
     }
 
-    protected string $scoreBoard {
+    private string $scoreBoard {
         get {
             if ($this->isDraw()) {
                 return $this->draw();
@@ -48,6 +48,11 @@ abstract class BaseTennisGame implements TennisGame
         $playerName === $this->firstPlayer
             ? $this->firstPlayerScore++
             : $this->secondPlayerScore++;
+    }
+
+    public function getScore(): string
+    {
+        return $this->scoreBoard;
     }
 
     private function isDraw(): bool
