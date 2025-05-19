@@ -403,3 +403,4 @@ make install
   - I could spend some time on refactoring `TennisGame2` as the logic would be different than the `TennisGame1`. Nevertheless, I would rather to invest this time in case any of the games has got a different logic or to do another kata
   - Refactor `TennisGame1Test` to `pull up` `testScores` logic to `TestMaster`
   - Refactor `TestMaster` `fixExpectedResultPlayersNames` from `protected` visibility to `private`
+  - Refactor `TestMaster` `seedScores` visibility from `protected` to `private`

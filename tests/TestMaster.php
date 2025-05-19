@@ -55,23 +55,6 @@ abstract class TestMaster extends TestCase
         ];
     }
 
-    protected function seedScores(int $score1, int $score2): void
-    {
-        $highestScore = max($score1, $score2);
-        for ($i = 0; $i < $highestScore; $i++) {
-            if ($i < $score1) {
-                $this->game->wonPoint(
-                    $this->firstPlayer
-                );
-            }
-            if ($i < $score2) {
-                $this->game->wonPoint(
-                    $this->secondPlayer
-                );
-            }
-        }
-    }
-
     protected function assertScores(int $score1, int $score2, string $expectedResult): void
     {
         $this->seedScores($score1, $score2);
@@ -96,5 +79,22 @@ abstract class TestMaster extends TestCase
             $this->secondPlayer,
             $fixedExpectedResult
         );
+    }
+
+    private function seedScores(int $score1, int $score2): void
+    {
+        $highestScore = max($score1, $score2);
+        for ($i = 0; $i < $highestScore; $i++) {
+            if ($i < $score1) {
+                $this->game->wonPoint(
+                    $this->firstPlayer
+                );
+            }
+            if ($i < $score2) {
+                $this->game->wonPoint(
+                    $this->secondPlayer
+                );
+            }
+        }
     }
 }
