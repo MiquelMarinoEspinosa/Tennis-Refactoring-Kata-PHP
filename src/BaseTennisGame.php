@@ -52,4 +52,9 @@ abstract class BaseTennisGame implements TennisGame
     {
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }
+
+    protected function advantageFor(string $player): string
+    {
+        return sprintf('Advantage %s', $player);
+    }
 }
