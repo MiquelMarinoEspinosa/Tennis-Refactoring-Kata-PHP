@@ -73,7 +73,16 @@ abstract class BaseTennisGame implements TennisGame
         return sprintf('Win for %s', $player);
     }
 
-    protected function playerScore(int $scoreBoard): string
+    protected function playersScore(): string
+    {
+        return sprintf(
+            '%s-%s',
+            $this->playerScore($this->firstPlayerScore),
+            $this->playerScore($this->secondPlayerScore)
+        );
+    }
+
+    private function playerScore(int $scoreBoard): string
     {
         return self::SCORE_MESSAGE_MAP[$scoreBoard] ?? 'Forty';
     }

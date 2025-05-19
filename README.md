@@ -445,3 +445,5 @@ make install
     - `pull up` `advantageOrWin method` to `BaseTennisGame` and make it `protected`
       - Make `winFor` and `advantageFor` `private` back again
     - `pull up` `playerScore method` to `BaseTennisGame` and make it `protected`
+    - `pull up` `playersScore method` to `BaseTennisGame` and make it `protected`
+      - make `playerScore` `private` back again

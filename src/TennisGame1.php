@@ -24,13 +24,4 @@ class TennisGame1 extends BaseTennisGame
     {
         return $this->scoreBoard;
     }
-
-    private function playersScore(): string
-    {
-        return sprintf(
-            '%s-%s',
-            $this->playerScore($this->firstPlayerScore),
-            $this->playerScore($this->secondPlayerScore)
-        );
-    }
 }
