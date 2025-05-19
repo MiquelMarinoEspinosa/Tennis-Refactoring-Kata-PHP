@@ -65,23 +65,7 @@ abstract class TestMaster extends TestCase
         );
     }
 
-    private function fixExpectedResultPlayersNames(
-        string $expectedResult
-    ): string {
-        $fixedExpectedResult = str_replace(
-            'player1',
-            $this->game->firstPlayer,
-            $expectedResult
-        );
-
-        return str_replace(
-            'player2',
-            $this->secondPlayer,
-            $fixedExpectedResult
-        );
-    }
-
-    private function seedScores(int $score1, int $score2): void
+    protected function seedScores(int $score1, int $score2): void
     {
         $highestScore = max($score1, $score2);
         for ($i = 0; $i < $highestScore; $i++) {
@@ -96,5 +80,21 @@ abstract class TestMaster extends TestCase
                 );
             }
         }
+    }
+
+    private function fixExpectedResultPlayersNames(
+        string $expectedResult
+    ): string {
+        $fixedExpectedResult = str_replace(
+            'player1',
+            $this->game->firstPlayer,
+            $expectedResult
+        );
+
+        return str_replace(
+            'player2',
+            $this->secondPlayer,
+            $fixedExpectedResult
+        );
     }
 }
