@@ -442,3 +442,5 @@ make install
     - `pull up` `isAdvantageOrWin method` to `BaseTennisGame` and make it `protected`
     - `pull up` `advantageFor method` to `BaseTennisGame` and make it `protected`
     - `pull up` `winFor method` to `BaseTennisGame` and make it `protected`
+    - `pull up` `advantageOrWin method` to `BaseTennisGame` and make it `protected`
+      - Make `winFor` and `advantageFor` `private` back again

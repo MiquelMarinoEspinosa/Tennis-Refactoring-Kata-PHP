@@ -53,12 +53,22 @@ abstract class BaseTennisGame implements TennisGame
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }
 
-    protected function advantageFor(string $player): string
+    protected function advantageOrWin(): string
+    {
+        return match(true) {
+            $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
+            $this->minusResult === -1 => $this->advantageFor($this->secondPlayer),
+            $this->minusResult >= 2   => $this->winFor($this->firstPlayer),
+            default                   => $this->winFor($this->secondPlayer)
+        };
+    }
+
+    private function advantageFor(string $player): string
     {
         return sprintf('Advantage %s', $player);
     }
 
-    protected function winFor(string $player): string
+    private function winFor(string $player): string
     {
         return sprintf('Win for %s', $player);
     }
