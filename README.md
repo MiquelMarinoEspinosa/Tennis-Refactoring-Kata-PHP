@@ -410,3 +410,4 @@ make install
     - Use `firstPlayer` public field at `TestMaster`
     - Extend `seedScores` visibility to be used to the rest of none yet refactored tests
     - Remove `firstPlayer` field at `TestMaster`
+    - Refactor `TennisGame1` exposing `secondPlayer` as `public field with asymetric visibility` - private setter, public access
