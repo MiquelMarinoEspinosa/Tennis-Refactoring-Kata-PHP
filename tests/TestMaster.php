@@ -72,7 +72,17 @@ abstract class TestMaster extends TestCase
         }
     }
 
-    protected function fixExpectedResultPlayersNames(
+    protected function assertScores(int $score1, int $score2, string $expectedResult): void
+    {
+        $this->seedScores($score1, $score2);
+        $this->assertSame(
+            $this->fixExpectedResultPlayersNames(
+                $expectedResult
+            ), $this->game->getScore()
+        );
+    }
+
+    private function fixExpectedResultPlayersNames(
         string $expectedResult
     ): string {
         $fixedExpectedResult = str_replace(
@@ -85,16 +95,6 @@ abstract class TestMaster extends TestCase
             'player2',
             $this->secondPlayer,
             $fixedExpectedResult
-        );
-    }
-
-    protected function assertScores(int $score1, int $score2, string $expectedResult): void
-    {
-        $this->seedScores($score1, $score2);
-        $this->assertSame(
-            $this->fixExpectedResultPlayersNames(
-                $expectedResult
-            ), $this->game->getScore()
         );
     }
 }
