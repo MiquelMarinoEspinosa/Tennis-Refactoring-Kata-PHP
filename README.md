@@ -415,3 +415,4 @@ make install
     - Remove `secondPlayer` field at `TestMaster`
     - At this point, it would be great to dynamically generate the name of the players to make sure that the tests continue to pass regardless the name of the players. For this purpouse, it will be used the [Faker](https://fakerphp.org/) library
       - Install `Faker` library
+      - Use `Faker` to generate `firstName` `Game` at `TennisGame1Test`

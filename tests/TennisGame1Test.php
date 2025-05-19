@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use PHPUnit\Framework\Attributes\DataProvider;
+use Faker\Factory;
 use TennisGame\TennisGame1;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 /**
  * TennisGame1 test case.
@@ -20,7 +21,7 @@ final class TennisGame1Test extends TestMaster
         parent::setUp();
 
         $this->game = new TennisGame1(
-            'Novak Djokovic',
+            Factory::create()->name(),
             'Rafa Nadal'
         );
     }
