@@ -24,4 +24,4 @@ tests:
 	$(SH_PHP) vendor/bin/phpunit
 
 pre-commit:
-	ln -s pre-commit .git/hooks/pre-commit
+	ln -s ../../pre-commit .git/hooks/pre-commit
