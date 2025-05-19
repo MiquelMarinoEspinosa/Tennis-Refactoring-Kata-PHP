@@ -7,4 +7,6 @@ namespace TennisGame;
 abstract class BaseTennisGame
 {
     protected int $firstPlayerScore = 0;
+
+    protected int $secondPlayerScore = 0;
 }
