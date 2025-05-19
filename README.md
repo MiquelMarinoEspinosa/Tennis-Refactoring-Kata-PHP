@@ -419,3 +419,4 @@ make install
       - Use `Faker` to generate `secondName` `Game` at `TennisGame1Test`
       - `pull up` `Faker\Factory` at `TestMaster` to be reused by children test classes
         - Create protected `faker` field at `TestMaster`
+        - Use `faker` to generate `firstPlayer` name at `TennisGame1`
