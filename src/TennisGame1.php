@@ -6,20 +6,6 @@ namespace TennisGame;
 
 class TennisGame1 extends BaseTennisGame
 {
-    private string $scoreBoard {
-        get {
-            if ($this->isDraw()) {
-                return $this->draw();
-            }
-
-            if ($this->isAdvantageOrWin()) {
-                return $this->advantageOrWin();
-            }
-
-            return $this->playersScore();
-        }
-    }
-
     public function getScore(): string
     {
         return $this->scoreBoard;

@@ -9,18 +9,32 @@ abstract class BaseTennisGame implements TennisGame
     /**
      * @var array<string>
      */
-    protected const array SCORE_MESSAGE_MAP = [
+    private const array SCORE_MESSAGE_MAP = [
         0 => 'Love',
         1 => 'Fifteen',
         2 => 'Thirty'
     ];
 
-    protected int $firstPlayerScore = 0;
+    private int $firstPlayerScore = 0;
 
-    protected int $secondPlayerScore = 0;
+    private int $secondPlayerScore = 0;
 
-    protected int $minusResult {
+    private int $minusResult {
         get => $this->firstPlayerScore - $this->secondPlayerScore;
+    }
+
+    protected string $scoreBoard {
+        get {
+            if ($this->isDraw()) {
+                return $this->draw();
+            }
+
+            if ($this->isAdvantageOrWin()) {
+                return $this->advantageOrWin();
+            }
+
+            return $this->playersScore();
+        }
     }
 
     public function __construct(
@@ -36,24 +50,24 @@ abstract class BaseTennisGame implements TennisGame
             : $this->secondPlayerScore++;
     }
 
-    protected function isDraw(): bool
+    private function isDraw(): bool
     {
         return $this->firstPlayerScore === $this->secondPlayerScore;
     }
 
-    protected function draw(): string
+    private function draw(): string
     {
         return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
             ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
             : 'Deuce';
     }
 
-    protected function isAdvantageOrWin(): bool
+    private function isAdvantageOrWin(): bool
     {
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }
 
-    protected function advantageOrWin(): string
+    private function advantageOrWin(): string
     {
         return match(true) {
             $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
@@ -73,7 +87,7 @@ abstract class BaseTennisGame implements TennisGame
         return sprintf('Win for %s', $player);
     }
 
-    protected function playersScore(): string
+    private function playersScore(): string
     {
         return sprintf(
             '%s-%s',

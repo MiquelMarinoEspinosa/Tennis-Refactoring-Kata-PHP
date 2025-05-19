@@ -447,3 +447,5 @@ make install
     - `pull up` `playerScore method` to `BaseTennisGame` and make it `protected`
     - `pull up` `playersScore method` to `BaseTennisGame` and make it `protected`
       - make `playerScore` `private` back again
+    - Finally :), `pull up` `scoreBoard hook property` to `BaseTennisGame` and make it `protected`
+      - Restrict the rest of the fields and methods to `private` visibility, the ones that could be `private`
