@@ -57,4 +57,9 @@ abstract class BaseTennisGame implements TennisGame
     {
         return sprintf('Advantage %s', $player);
     }
+
+    protected function winFor(string $player): string
+    {
+        return sprintf('Win for %s', $player);
+    }
 }

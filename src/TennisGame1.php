@@ -35,11 +35,6 @@ class TennisGame1 extends BaseTennisGame
         };
     }
 
-    private function winFor(string $player): string
-    {
-        return sprintf('Win for %s', $player);
-    }
-
     private function playersScore(): string
     {
         return sprintf(
