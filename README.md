@@ -430,3 +430,4 @@ make install
     - The name is not that important now, because it might be that the name would be refactor again in further iterations
     - Create `BaseTennisGame` class
     - Extends `TennisGame1` from `BaseTennisGame`
+    - `pull up` `firstPlayerScore field` to `BaseTennisGame` and make it `protected`

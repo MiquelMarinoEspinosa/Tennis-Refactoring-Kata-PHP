@@ -6,8 +6,6 @@ namespace TennisGame;
 
 class TennisGame1 extends BaseTennisGame implements TennisGame
 {
-    private int $firstPlayerScore = 0;
-
     private int $secondPlayerScore = 0;
 
     /**

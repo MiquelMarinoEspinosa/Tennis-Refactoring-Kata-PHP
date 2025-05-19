@@ -6,5 +6,5 @@ namespace TennisGame;
 
 abstract class BaseTennisGame
 {
-    
+    protected int $firstPlayerScore = 0;
 }
