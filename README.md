@@ -389,3 +389,11 @@ make install
 - Next steps
   - At this point the `TennisGame1` refactor can be considered finished :D
   - Let's start the refactor of `TennisGame2`
+
+#### TennisGame2
+  - `TennisGame2` class has not got `100%` coverage - `94.12%` instead
+    - 2 private methods are not covered: `SetP1Score` and `SetP2Score`
+    - The `TennisGame2Test` is identical to `TennisGame1Test` before the refactor
+    - According to the IDE, the methods `SetP1Score` and `SetP2Score` are not used. Therefore, this class refactor will start removing these unused methods
+- Remove `SetP1Score` unused method
+  - Increased coverage up to `96.97%`
