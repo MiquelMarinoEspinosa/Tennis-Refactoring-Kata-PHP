@@ -397,3 +397,5 @@ make install
     - According to the IDE, the methods `SetP1Score` and `SetP2Score` are not used. Therefore, this class refactor will start removing these unused methods
 - Remove `SetP1Score` unused method
   - Increased coverage up to `96.97%`
+- Remove unused `SetP2Score` method
+  - Increased coverage up to `100%`

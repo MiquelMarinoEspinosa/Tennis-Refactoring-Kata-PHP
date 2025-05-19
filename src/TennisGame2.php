@@ -129,13 +129,6 @@ class TennisGame2 implements TennisGame
         }
     }
 
-    private function SetP2Score(int $number): void
-    {
-        for ($i = 0; $i < $number; $i++) {
-            $this->P2Score();
-        }
-    }
-
     private function P1Score(): void
     {
         $this->P1point++;
