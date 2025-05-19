@@ -40,4 +40,11 @@ abstract class BaseTennisGame implements TennisGame
     {
         return $this->firstPlayerScore === $this->secondPlayerScore;
     }
+
+    protected function draw(): string
+    {
+        return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
+            ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
+            : 'Deuce';
+    }
 }

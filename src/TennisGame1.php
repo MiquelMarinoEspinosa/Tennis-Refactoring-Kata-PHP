@@ -25,13 +25,6 @@ class TennisGame1 extends BaseTennisGame
         return $this->scoreBoard;
     }
 
-    private function draw(): string
-    {
-        return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
-            ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
-            : 'Deuce';
-    }
-
     private function isAdvantageOrWin(): bool
     {
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
