@@ -33,9 +33,4 @@ class TennisGame1 extends BaseTennisGame
             $this->playerScore($this->secondPlayerScore)
         );
     }
-
-    private function playerScore(int $scoreBoard): string
-    {
-        return self::SCORE_MESSAGE_MAP[$scoreBoard] ?? 'Forty';
-    }
 }
