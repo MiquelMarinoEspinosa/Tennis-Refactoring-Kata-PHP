@@ -421,3 +421,8 @@ make install
         - Create protected `faker` field at `TestMaster`
         - Use `faker` to generate `firstPlayer` name at `TennisGame1`
         - Use `faker` to generate `secondPlayer` name at `TennisGame1`
+      - I have just realized that the rest of the `unit tests` for the other games are broken :/
+        - That is due to the change made at `TestMaster` which uses exposes `player's name` from `TestGame1`. However, the rest of the tests have these fields not exposed yet
+          - Unfortunately, I must continue using the temporal fields at `TestMaster` for the players' names to be backward compatible :(
+            - Restoring at `TestMaster` temporal names and update them at `TennisGame1` with `Faker` random values
+            - Nevertheless, the last changes introduced the random names generation for the sake of more robusts unit tests

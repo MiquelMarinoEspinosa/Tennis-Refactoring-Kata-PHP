@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use Faker\Factory;
 use TennisGame\TennisGame1;
 use PHPUnit\Framework\Attributes\DataProvider;
 
@@ -20,9 +19,12 @@ final class TennisGame1Test extends TestMaster
     {
         parent::setUp();
 
+        $this->firstPlayer = $this->faker->name;
+        $this->secondPlayer = $this->faker->name;
+
         $this->game = new TennisGame1(
-            $this->faker->name,
-            $this->faker->name
+            $this->firstPlayer,
+            $this->secondPlayer
         );
     }
 

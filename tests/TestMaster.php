@@ -13,10 +13,15 @@ abstract class TestMaster extends TestCase
 {
     protected TennisGame $game;
     protected Generator $faker;
+    protected string $firstPlayer;
+    protected string $secondPlayer;
 
     protected function setUp(): void
     {
         $this->faker = Factory::create();
+
+        $this->firstPlayer = 'player1';
+        $this->secondPlayer = 'player2';
     }
 
     /**
@@ -77,12 +82,12 @@ abstract class TestMaster extends TestCase
         for ($i = 0; $i < $highestScore; $i++) {
             if ($i < $score1) {
                 $this->game->wonPoint(
-                    $this->game->firstPlayer,
+                    $this->firstPlayer,
                 );
             }
             if ($i < $score2) {
                 $this->game->wonPoint(
-                    $this->game->secondPlayer
+                    $this->secondPlayer
                 );
             }
         }
@@ -93,13 +98,13 @@ abstract class TestMaster extends TestCase
     ): string {
         $fixedExpectedResult = str_replace(
             'player1',
-            $this->game->firstPlayer,
+            $this->firstPlayer,
             $expectedResult
         );
 
         return str_replace(
             'player2',
-            $this->game->secondPlayer,
+            $this->secondPlayer,
             $fixedExpectedResult
         );
     }
