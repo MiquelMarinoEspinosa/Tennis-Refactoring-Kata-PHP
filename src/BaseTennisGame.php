@@ -19,4 +19,11 @@ abstract class BaseTennisGame implements TennisGame
         public private(set) string $secondPlayer
     ) {
     }
+
+    public function wonPoint(string $playerName): void
+    {
+        $playerName === $this->firstPlayer
+            ? $this->firstPlayerScore++
+            : $this->secondPlayerScore++;
+    }
 }

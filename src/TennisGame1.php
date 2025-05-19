@@ -29,13 +29,6 @@ class TennisGame1 extends BaseTennisGame
         }
     }
 
-    public function wonPoint(string $playerName): void
-    {
-        $playerName === $this->firstPlayer
-            ? $this->firstPlayerScore++
-            : $this->secondPlayerScore++;
-    }
-
     public function getScore(): string
     {
         return $this->scoreBoard;
