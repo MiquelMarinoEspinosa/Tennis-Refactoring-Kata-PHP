@@ -404,3 +404,4 @@ make install
   - Refactor `TennisGame1Test` to `pull up` `testScores` logic to `TestMaster`
   - Refactor `TestMaster` `fixExpectedResultPlayersNames` from `protected` visibility to `private`
   - Refactor `TestMaster` `seedScores` visibility from `protected` to `private`
+  - Make `TennisGame1Test` final

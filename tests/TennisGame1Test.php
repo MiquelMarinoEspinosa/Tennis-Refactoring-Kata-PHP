@@ -10,7 +10,7 @@ use TennisGame\TennisGame1;
 /**
  * TennisGame1 test case.
  */
-class TennisGame1Test extends TestMaster
+final class TennisGame1Test extends TestMaster
 {
     /**
      * Prepares the environment before running a test.
