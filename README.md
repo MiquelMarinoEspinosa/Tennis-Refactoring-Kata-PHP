@@ -429,3 +429,4 @@ make install
   - Now the `TennisGame1` logic can be pull up to a new abstract super class called `BaseTennisGame`
     - The name is not that important now, because it might be that the name would be refactor again in further iterations
     - Create `BaseTennisGame` class
+    - Extends `TennisGame1` from `BaseTennisGame`
