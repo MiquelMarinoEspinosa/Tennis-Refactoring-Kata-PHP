@@ -412,3 +412,4 @@ make install
     - Remove `firstPlayer` field at `TestMaster`
     - Refactor `TennisGame1` exposing `secondPlayer` as `public field with asymetric visibility` - private setter, public access
     - Use `secondPlayer` public field at `TestMaster`
+    - Remove `secondPlayer` field at `TestMaster`

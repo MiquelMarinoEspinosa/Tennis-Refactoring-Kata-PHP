@@ -18,11 +18,10 @@ final class TennisGame1Test extends TestMaster
     protected function setUp(): void
     {
         parent::setUp();
-        $this->secondPlayer = 'Rafa Nadal';
 
         $this->game = new TennisGame1(
             'Novak Djokovic',
-            $this->secondPlayer
+            'Rafa Nadal'
         );
     }
 
