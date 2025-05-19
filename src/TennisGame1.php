@@ -34,11 +34,6 @@ class TennisGame1 extends BaseTennisGame
         return $this->scoreBoard;
     }
 
-    private function isDraw(): bool
-    {
-        return $this->firstPlayerScore === $this->secondPlayerScore;
-    }
-
     private function draw(): string
     {
         return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])

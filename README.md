@@ -436,3 +436,4 @@ make install
     - `pull up` `__construct method` to `BaseTennisGame`
     - `pull up` `implements interface` to `BaseTennisGame`
     - `pull up` `wontPoint method` to `BaseTennisGame`
+    - `pull up` `isDraw method` to `BaseTennisGame` and make it `protected`

@@ -26,4 +26,9 @@ abstract class BaseTennisGame implements TennisGame
             ? $this->firstPlayerScore++
             : $this->secondPlayerScore++;
     }
+
+    protected function isDraw(): bool
+    {
+        return $this->firstPlayerScore === $this->secondPlayerScore;
+    }
 }
