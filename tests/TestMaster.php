@@ -10,7 +10,6 @@ use TennisGame\TennisGame;
 abstract class TestMaster extends TestCase
 {
     protected TennisGame $game;
-    protected string $firstPlayer = 'player1';
     protected string $secondPlayer = 'player2';
 
     /**
@@ -71,7 +70,7 @@ abstract class TestMaster extends TestCase
         for ($i = 0; $i < $highestScore; $i++) {
             if ($i < $score1) {
                 $this->game->wonPoint(
-                    $this->firstPlayer
+                    $this->game->firstPlayer,
                 );
             }
             if ($i < $score2) {
