@@ -451,3 +451,4 @@ make install
       - Restrict the rest of the fields and methods to `private` visibility, the ones that could be `private`
     - `pull up` `getScore public method` to `BaseTennisGame`
       - Restrict `scoreBoard property hook visibility` to `private`
+    - Make `TennisGame1` final
