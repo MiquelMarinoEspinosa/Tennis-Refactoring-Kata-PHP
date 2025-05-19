@@ -433,3 +433,4 @@ make install
     - `pull up` `firstPlayerScore field` to `BaseTennisGame` and make it `protected`
     - `pull up` `secondPlayerScore field` to `BaseTennisGame` and make it `protected`
     - `pull up` `minusResult property hook` to `BaseTennisGame` and make it `protected`
+    - `pull up` `__construct method` to `BaseTennisGame`

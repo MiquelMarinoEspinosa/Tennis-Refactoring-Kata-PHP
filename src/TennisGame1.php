@@ -29,12 +29,6 @@ class TennisGame1 extends BaseTennisGame implements TennisGame
         }
     }
 
-    public function __construct(
-        public private(set) string $firstPlayer,
-        public private(set) string $secondPlayer
-    ) {
-    }
-
     public function wonPoint(string $playerName): void
     {
         $playerName === $this->firstPlayer

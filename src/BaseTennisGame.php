@@ -13,4 +13,10 @@ abstract class BaseTennisGame
     protected int $minusResult {
         get => $this->firstPlayerScore - $this->secondPlayerScore;
     }
+
+    public function __construct(
+        public private(set) string $firstPlayer,
+        public private(set) string $secondPlayer
+    ) {
+    }
 }
