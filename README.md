@@ -432,3 +432,4 @@ make install
     - Extends `TennisGame1` from `BaseTennisGame`
     - `pull up` `firstPlayerScore field` to `BaseTennisGame` and make it `protected`
     - `pull up` `secondPlayerScore field` to `BaseTennisGame` and make it `protected`
+    - `pull up` `minusResult property hook` to `BaseTennisGame` and make it `protected`

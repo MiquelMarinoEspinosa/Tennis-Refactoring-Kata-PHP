@@ -15,10 +15,6 @@ class TennisGame1 extends BaseTennisGame implements TennisGame
         2 => 'Thirty'
     ];
 
-    private int $minusResult {
-        get => $this->firstPlayerScore - $this->secondPlayerScore;
-    }
-
     private string $scoreBoard {
         get {
             if ($this->isDraw()) {
