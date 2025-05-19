@@ -426,3 +426,6 @@ make install
           - Unfortunately, I must continue using the temporal fields at `TestMaster` for the players' names to be backward compatible :(
             - Restoring at `TestMaster` temporal names and update them at `TennisGame1` with `Faker` random values
             - Nevertheless, the last changes introduced the random names generation for the sake of more robusts unit tests
+  - Now the `TennisGame1` logic can be pull up to a new abstract super class called `BaseTennisGame`
+    - The name is not that important now, because it might be that the name would be refactor again in further iterations
+    - Create `BaseTennisGame` class
