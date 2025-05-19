@@ -70,7 +70,7 @@ abstract class TestMaster extends TestCase
     ): string {
         $fixedExpectedResult = str_replace(
             'player1',
-            $this->firstPlayer,
+            $this->game->firstPlayer,
             $expectedResult
         );
 

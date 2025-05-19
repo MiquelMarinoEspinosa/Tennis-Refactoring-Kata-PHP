@@ -406,4 +406,5 @@ make install
   - Refactor `TestMaster` `seedScores` visibility from `protected` to `private`
   - Make `TennisGame1Test` final
   - At this point, it would be geat to get rid of the `Test` field's which save the player's name to fix it in the `data provider`. To do so, it is required to expose via either getter or public field with asymetric visibility. I will go for the second option to practice a little this new php's feature :P
-    - Refactor `TennisGame1` exposing `player1` as `public field with asymetric visibility` - private setter, public access
+    - Refactor `TennisGame1` exposing `firstPlayer` as `public field with asymetric visibility` - private setter, public access
+    - Use `firstPlayer` public field at `TestMaster`
