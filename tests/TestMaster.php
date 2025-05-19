@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use PHPUnit\Framework\TestCase;
+use Faker\Factory;
+use Faker\Generator;
 use TennisGame\TennisGame;
+use PHPUnit\Framework\TestCase;
 
 abstract class TestMaster extends TestCase
 {
     protected TennisGame $game;
+    protected Generator $faker;
+
+    protected function setUp(): void
+    {
+        $this->faker = Factory::create();
+    }
 
     /**
      * @return mixed[][]

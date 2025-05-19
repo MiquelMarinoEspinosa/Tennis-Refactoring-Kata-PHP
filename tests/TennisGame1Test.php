@@ -21,8 +21,8 @@ final class TennisGame1Test extends TestMaster
         parent::setUp();
 
         $this->game = new TennisGame1(
-            Factory::create()->name(),
-            Factory::create()->name()
+            Factory::create()->name,
+            Factory::create()->name
         );
     }
 
