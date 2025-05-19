@@ -437,3 +437,4 @@ make install
     - `pull up` `implements interface` to `BaseTennisGame`
     - `pull up` `wontPoint method` to `BaseTennisGame`
     - `pull up` `isDraw method` to `BaseTennisGame` and make it `protected`
+    - `pull up` `SCORE_MESSAGE_MAP constant` to `BaseTennisGame` and make it `protected`

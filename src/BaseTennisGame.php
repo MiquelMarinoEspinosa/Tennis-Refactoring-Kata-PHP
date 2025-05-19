@@ -6,6 +6,15 @@ namespace TennisGame;
 
 abstract class BaseTennisGame implements TennisGame
 {
+    /**
+     * @var array<string>
+     */
+    protected const array SCORE_MESSAGE_MAP = [
+        0 => 'Love',
+        1 => 'Fifteen',
+        2 => 'Thirty'
+    ];
+
     protected int $firstPlayerScore = 0;
 
     protected int $secondPlayerScore = 0;

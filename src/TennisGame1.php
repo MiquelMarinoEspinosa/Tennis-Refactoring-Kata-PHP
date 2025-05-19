@@ -6,15 +6,6 @@ namespace TennisGame;
 
 class TennisGame1 extends BaseTennisGame
 {
-    /**
-     * @var array<string>
-     */
-    private const array SCORE_MESSAGE_MAP = [
-        0 => 'Love',
-        1 => 'Fifteen',
-        2 => 'Thirty'
-    ];
-
     private string $scoreBoard {
         get {
             if ($this->isDraw()) {
