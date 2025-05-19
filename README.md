@@ -399,3 +399,6 @@ make install
   - Increased coverage up to `96.97%`
 - Remove unused `SetP2Score` method
   - Increased coverage up to `100%`
+- At this point and given that the unit test is exactly the same that the one used for `TennisGame1`, the `TennisGame2Test` can be refactor to use the changes applied at the `TennisGame1Test` and be ready to apply a refactor which will consists on creating a new abstract superclass which will have the game's logic
+  - I could spend some time on refactoring `TennisGame2` as the logic would be different than the `TennisGame1`. Nevertheless, I would rather to invest this time in case any of the games has got a different logic or to do another kata
+  - Refactor `TennisGame1Test` to `pull up` `testScores` logic to `testMaster`

@@ -30,11 +30,6 @@ class TennisGame1Test extends TestMaster
     #[DataProvider('data')]
     public function testScores(int $score1, int $score2, string $expectedResult): void
     {
-        $this->seedScores($score1, $score2);
-        $this->assertSame(
-            $this->fixExpectedResultPlayersNames(
-                $expectedResult
-            ), $this->game->getScore()
-        );
+        $this->assertScores($score1, $score2, $expectedResult);
     }
 }

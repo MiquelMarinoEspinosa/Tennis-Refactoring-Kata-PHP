@@ -87,4 +87,14 @@ abstract class TestMaster extends TestCase
             $fixedExpectedResult
         );
     }
+
+    protected function assertScores(int $score1, int $score2, string $expectedResult): void
+    {
+        $this->seedScores($score1, $score2);
+        $this->assertSame(
+            $this->fixExpectedResultPlayersNames(
+                $expectedResult
+            ), $this->game->getScore()
+        );
+    }
 }
