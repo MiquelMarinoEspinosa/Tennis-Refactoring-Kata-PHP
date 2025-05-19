@@ -22,7 +22,7 @@ final class TennisGame1Test extends TestMaster
 
         $this->game = new TennisGame1(
             $this->faker->name,
-            Factory::create()->name
+            $this->faker->name
         );
     }
 
