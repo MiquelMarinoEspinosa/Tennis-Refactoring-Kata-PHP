@@ -22,7 +22,7 @@ final class TennisGame1Test extends TestMaster
 
         $this->game = new TennisGame1(
             Factory::create()->name(),
-            'Rafa Nadal'
+            Factory::create()->name()
         );
     }
 
