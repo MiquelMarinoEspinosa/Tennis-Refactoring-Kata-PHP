@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TennisGame;
 
-abstract class BaseTennisGame
+abstract class BaseTennisGame implements TennisGame
 {
     protected int $firstPlayerScore = 0;
 
