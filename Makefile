@@ -1,4 +1,4 @@
-.PHONY: coverage build tests pre-commit
+.PHONY: coverage build pre-commit-tests pre-commit-link
 
 SH_PHP=docker exec -i -t app.php-cli
 
@@ -20,8 +20,8 @@ install:
 coverage:
 	$(SH_PHP) vendor/bin/phpunit --coverage-html coverage
 
-tests:
-	$(SH_PHP) vendor/bin/phpunit
+pre-commit-tests:
+	docker exec -t app.php-cli vendor/bin/phpunit
 
-pre-commit:
+pre-commit-link:
 	ln -s ../../pre-commit .git/hooks/pre-commit
