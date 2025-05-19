@@ -439,3 +439,4 @@ make install
     - `pull up` `isDraw method` to `BaseTennisGame` and make it `protected`
     - `pull up` `SCORE_MESSAGE_MAP constant` to `BaseTennisGame` and make it `protected`
     - `pull up` `draw method` to `BaseTennisGame` and make it `protected`
+    - `pull up` `isAdvantageOrWin method` to `BaseTennisGame` and make it `protected`

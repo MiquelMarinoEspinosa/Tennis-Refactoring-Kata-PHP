@@ -47,4 +47,9 @@ abstract class BaseTennisGame implements TennisGame
             ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
             : 'Deuce';
     }
+
+    protected function isAdvantageOrWin(): bool
+    {
+        return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
+    }
 }

@@ -25,11 +25,6 @@ class TennisGame1 extends BaseTennisGame
         return $this->scoreBoard;
     }
 
-    private function isAdvantageOrWin(): bool
-    {
-        return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
-    }
-
     private function advantageOrWin(): string
     {
         return match(true) {
