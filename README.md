@@ -485,3 +485,4 @@ make install
   - Same logic as the previous refactored classes
   - Let's proceed to the general refactor strategy for this class also
 - Remove `TennisGame6` logic and extends `TextTennisGame` logic
+- Replace `TennisGame6Test` logic with previous refactored test classes
