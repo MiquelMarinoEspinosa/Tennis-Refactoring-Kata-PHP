@@ -527,3 +527,6 @@ make install
 - Replace `TennisGame7Test` logic by previous tests already refactored logic
 - Call `parent::getScore` instead of accessing directly to `scoreBoard` attribute and make the property hook `private` again |:-D
 - Refactor test to use `sprintf` instead of `dot concatenation operator`
+- The current result is quite good for `TennisGame7` refactor as well as in general
+- The main idea now would be reducing the number of games and its tests instanciating directly the `TextTennisGame` to all tests and remove them except `TennisGame7` as long as the `coverage` is still `100%`
+- Then it can be considered the previous idea of extracting the score business logic into new class called `Score`
