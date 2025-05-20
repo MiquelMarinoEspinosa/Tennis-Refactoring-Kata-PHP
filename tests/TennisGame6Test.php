@@ -6,7 +6,7 @@ namespace Tests;
 use TennisGame\TennisGame6;
 use PHPUnit\Framework\Attributes\DataProvider;
 
-class TennisGame6Test extends TestMaster {
+final class TennisGame6Test extends TestMaster {
 
     protected function setUp(): void
     {

@@ -2,7 +2,7 @@
 
 namespace TennisGame;
 
-class TennisGame6 extends TextTennisGame
+final class TennisGame6 extends TextTennisGame
 {
 
 }
