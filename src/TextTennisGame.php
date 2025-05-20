@@ -96,13 +96,13 @@ class TextTennisGame implements TennisGame
     {
         return sprintf(
             '%s-%s',
-            $this->playerScore($this->firstPlayerScore),
-            $this->playerScore($this->secondPlayerScore)
+            $this->regularScoreFor($this->firstPlayerScore),
+            $this->regularScoreFor($this->secondPlayerScore)
         );
     }
 
-    private function playerScore(int $scoreBoard): string
+    private function regularScoreFor(int $score): string
     {
-        return self::SCORE_MESSAGE_MAP[$scoreBoard] ?? 'Forty';
+        return self::SCORE_MESSAGE_MAP[$score] ?? 'Forty';
     }
 }

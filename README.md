@@ -502,3 +502,4 @@ make install
     - I do not fancy the idea to have `and` or `or` conjuntions in method's name because indicates that the method might be doing too much not respecting the `SRP`. I will take care of it in further iterations
   - refactor `playersScore` method's name to `regularScore`
   - refactor `winFor` method's name to `endGameFor`
+  - refactor `playerScore` method's name to `regularScoreFor`
