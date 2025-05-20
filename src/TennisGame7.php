@@ -10,7 +10,7 @@ final class TennisGame7 extends TextTennisGame
     {
         return sprintf(
             "Current score: %s, enjoy your game!",
-            $this->scoreBoard
+            parent::getScore()
         );
     }
 }

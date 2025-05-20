@@ -23,7 +23,7 @@ class TextTennisGame implements TennisGame
         get => $this->firstPlayerScore - $this->secondPlayerScore;
     }
 
-    protected string $scoreBoard {
+    private string $scoreBoard {
         get {
             if ($this->isTie()) {
                 return $this->tie();
