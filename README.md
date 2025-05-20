@@ -518,3 +518,4 @@ make install
 - Before proceding to the proper refactor of `TennisGame7`, I would like to refactor some methods name at `TextTennisGame` super class for the sake of enhancing clarity
   - Refactor `isAdvantageOrEndGame` method's name to `isEndGame`
   - Refactor `advantageOrEndGame` method's name to `endGame`
+  - Refactor `endGameFor` method's name to `winFor`
