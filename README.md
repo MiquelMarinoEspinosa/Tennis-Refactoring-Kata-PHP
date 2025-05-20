@@ -495,3 +495,4 @@ make install
       // regular score
     ```
   - refactor `isDraw` method's name to `isTie`
+  - add extra space to `TennisGame6Test` for `strict_type`
