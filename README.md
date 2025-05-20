@@ -532,7 +532,11 @@ make install
 - Then it can be considered the previous idea of extracting the score business logic into new class called `Score`
 
 #### TextTennisGame
-- Replace at `TennisGame1Test` the instance `TennisGame1` by `TextTennisGame`
-- Replace at `TennisGame2Test` the instance `TennisGame2` by `TextTennisGame`
-- Replace at `TennisGame3Test` the instance `TennisGame3` by `TextTennisGame`
-- Replace at `TennisGame6Test` the instance `TennisGame6` by `TextTennisGame`
+- Replace games specific instances `TextTennisGame` except game 7
+  - Replace at `TennisGame1Test` the instance `TennisGame1` by `TextTennisGame`
+  - Replace at `TennisGame2Test` the instance `TennisGame2` by `TextTennisGame`
+  - Replace at `TennisGame3Test` the instance `TennisGame3` by `TextTennisGame`
+  - Replace at `TennisGame6Test` the instance `TennisGame6` by `TextTennisGame`
+- The `coverage` is still `100%`
+  - Since `TennisGame1Test` till `TennisGame6Test` are testing the same `TextTennisGame` with the same logic, the tests and its specific classes can be removed
+    - Remove `TennisGame1Test` and `TennisGame1` classes
