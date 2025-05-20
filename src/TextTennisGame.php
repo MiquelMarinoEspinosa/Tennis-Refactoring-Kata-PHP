@@ -26,7 +26,7 @@ class TextTennisGame implements TennisGame
     private string $scoreBoard {
         get {
             if ($this->isTie()) {
-                return $this->draw();
+                return $this->tie();
             }
 
             if ($this->isAdvantageOrWin()) {
@@ -60,7 +60,7 @@ class TextTennisGame implements TennisGame
         return $this->firstPlayerScore === $this->secondPlayerScore;
     }
 
-    private function draw(): string
+    private function tie(): string
     {
         return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
             ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
