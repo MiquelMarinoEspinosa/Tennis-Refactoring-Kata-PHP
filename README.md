@@ -524,3 +524,4 @@ make install
 - Use `sprintf` at `getScore` method instead of `dot concatenation`
 - Add `strict_types`
 - Make `TennisGame7` and `TennisGame7Test` final
+- Replace `TennisGame7Test` logic by previous tests already refactored logic
