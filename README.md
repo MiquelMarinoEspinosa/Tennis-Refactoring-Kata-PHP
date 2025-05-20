@@ -472,10 +472,16 @@ make install
   - For now let's take a look to `TennisGame3` ^^
 
 #### TennisGame3
-- Let's take a look to the `TennisGame3Test`
+- Let's take a look to `TennisGame3Test`
   - It has exactly the same logic as the previous already refactored games
 - Remove `TennisGame3` logic and extends `TextTennisGame` logic
 - Replace `TennisGame3Test` logic by `TennisGame2Test` logic
 - Make `TennisGame3Test` and `TennisGame3` `final`
 - Now there is a new empty class `TennisGame3` just like the already refactored `TennisGame1` and `TennisGame2`
-- Let's move forward to refactor `TennisGame4`
+- Let's move forward to refactor `TennisGame6`
+
+#### TennisGame6
+- Let's a take a look to `TennisGame6Test`
+  - Same logic as the previous refactored classes
+  - Let's proceed to the general refactor strategy for this class also
+- Remove `TennisGame6` logic and extends `TextTennisGame` logic
