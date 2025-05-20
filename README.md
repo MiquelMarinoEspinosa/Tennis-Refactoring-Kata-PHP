@@ -540,3 +540,4 @@ make install
 - The `coverage` is still `100%`
   - Since `TennisGame1Test` till `TennisGame6Test` are testing the same `TextTennisGame` with the same logic, the tests and its specific classes can be removed
     - Remove `TennisGame1Test` and `TennisGame1` classes
+    - Remove `TennisGame2Test` and `TennisGame2` classes
