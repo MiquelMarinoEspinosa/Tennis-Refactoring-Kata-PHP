@@ -534,3 +534,4 @@ make install
 #### TextTennisGame
 - Replace at `TennisGame1Test` the instance `TennisGame1` by `TextTennisGame`
 - Replace at `TennisGame2Test` the instance `TennisGame2` by `TextTennisGame`
+- Replace at `TennisGame3Test` the instance `TennisGame3` by `TextTennisGame`

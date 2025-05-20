@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use TennisGame\TennisGame3;
 use PHPUnit\Framework\Attributes\DataProvider;
+use TennisGame\TextTennisGame;
 
 /**
  * TennisGame1 test case.
@@ -22,7 +22,7 @@ final class TennisGame3Test extends TestMaster
         $this->firstPlayer = $this->faker->name;
         $this->secondPlayer = $this->faker->name;
 
-        $this->game = new TennisGame3(
+        $this->game = new TextTennisGame(
             $this->firstPlayer,
             $this->secondPlayer
         );
