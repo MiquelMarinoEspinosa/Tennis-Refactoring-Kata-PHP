@@ -77,8 +77,8 @@ class TextTennisGame implements TennisGame
         return match(true) {
             $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
             $this->minusResult === -1 => $this->advantageFor($this->secondPlayer),
-            $this->minusResult >= 2   => $this->winFor($this->firstPlayer),
-            default                   => $this->winFor($this->secondPlayer)
+            $this->minusResult >= 2   => $this->endGameFor($this->firstPlayer),
+            default                   => $this->endGameFor($this->secondPlayer)
         };
     }
 
@@ -87,7 +87,7 @@ class TextTennisGame implements TennisGame
         return sprintf('Advantage %s', $player);
     }
 
-    private function winFor(string $player): string
+    private function endGameFor(string $player): string
     {
         return sprintf('Win for %s', $player);
     }
