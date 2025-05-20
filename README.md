@@ -470,3 +470,8 @@ make install
   - Once has been achieved this refactor, a second step will be replacing the games and its tests to use the new `TextTennisGame` reducing this way the number of tests and classes
   - Eventually, introducing `Score` class to decouple some `buisness logic` from the `presentation logic` shounds like a good idea
   - For now let's take a look to `TennisGame3` ^^
+
+#### TennisGame3
+- Let's take a look to the `TennisGame3Test`
+  - It has exactly the same logic as the previous already refactored games
+- Remove `TennisGame3` logic and extends `TextTennisGame` logic
