@@ -458,3 +458,6 @@ make install
 - Refactor `TennisGame2` extend from `BaseTennisGame` and remove its logic
 - Make `TennisGame2` and `TennisGame2Test` `final`
 - Refactor `TennisGame2Test` to use same logic as `TennisGame1Test`
+- Make `BaseTennisGame` no `abstract`
+  - Since the class has not got `abstract` method to be implemented by its `subclasses`, it is better to not make the class `abstract`
+  - Also this way would indicate whether the polymorphism hierarchy is necessary
