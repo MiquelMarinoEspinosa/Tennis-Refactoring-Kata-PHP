@@ -505,3 +505,15 @@ make install
   - refactor `playerScore` method's name to `regularScoreFor`
 - At this point, `TennisGame6` can be considered done ^_^
 - Let's take care of the final game `TennisGame7` refactor
+
+#### TennisGame7
+- Let's take a look to the `TennisGame7Test`
+  - There is a different logic than the previous refactored games |:O
+  - The expected assertion message adds extra `suffix` and `prefix` for all the cases to the expected result
+    - suffix: `Current score: `
+    - prefix: `, enjoy your game!`
+  - Not sure whether this logic is right :/ However, since I cannot confirm it either, I will stick with the current logic
+  - It is good that the only change is adding this value since the tests uses the same `data provider` and logic as the others tests
+    - Hopefully, just overrideing the `getScore` method, could be added the `prefix` and `suffix` messages at the `subclass` as a `decorator`. May be in further iterations a better idea would come up :). For now let's stick to this approach :D
+- Before proceding to the proper refactor of `TennisGame7`, I would like to refactor some methods name at `TextTennisGame` super class for the sake of enhancing clarity
+  - Refactor `isAdvantageOrEndGame` method's name to `isEndGame`
