@@ -517,3 +517,4 @@ make install
     - Hopefully, just overrideing the `getScore` method, could be added the `prefix` and `suffix` messages at the `subclass` as a `decorator`. May be in further iterations a better idea would come up :). For now let's stick to this approach :D
 - Before proceding to the proper refactor of `TennisGame7`, I would like to refactor some methods name at `TextTennisGame` super class for the sake of enhancing clarity
   - Refactor `isAdvantageOrEndGame` method's name to `isEndGame`
+  - Refactor `advantageOrEndGame` method's name to `endGame`

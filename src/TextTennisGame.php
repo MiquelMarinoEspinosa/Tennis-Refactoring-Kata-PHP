@@ -30,7 +30,7 @@ class TextTennisGame implements TennisGame
             }
 
             if ($this->isEndGame()) {
-                return $this->advantageOrEndGame();
+                return $this->endGame();
             }
 
             return $this->regularScore();
@@ -72,7 +72,7 @@ class TextTennisGame implements TennisGame
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }
 
-    private function advantageOrEndGame(): string
+    private function endGame(): string
     {
         return match(true) {
             $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
