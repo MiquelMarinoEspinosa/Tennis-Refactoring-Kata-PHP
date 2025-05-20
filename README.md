@@ -543,3 +543,12 @@ make install
     - Remove `TennisGame2Test` and `TennisGame2` classes
     - Remove `TennisGame3Test` and `TennisGame3` classes
     - Remove `TennisGame6Test` and `TennisGame6` classes
+- Now the `classes` have been reduced from `6` down to `2` as well as the `unit tests`
+- The `unit tests` execution are faster now
+- The logic is not duplicated any longer being almost all the logic implemented at `TextTennisGame`
+- The `test coverage` is still `100%`
+- Next steps
+  - Rename `TennisGame7` to `LastTextTennisGame`
+  - Refactor unit tests to avoid using temp player's name fields
+  - Consider the `Score` extract logic
+  - More than can come up through the refactor :D
