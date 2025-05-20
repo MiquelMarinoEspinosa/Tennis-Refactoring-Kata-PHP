@@ -476,3 +476,4 @@ make install
   - It has exactly the same logic as the previous already refactored games
 - Remove `TennisGame3` logic and extends `TextTennisGame` logic
 - Replace `TennisGame3Test` logic by `TennisGame2Test` logic
+- Make `TennisGame3Test` and `TennisGame3` `final`
