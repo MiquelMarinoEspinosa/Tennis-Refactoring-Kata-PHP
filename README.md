@@ -477,3 +477,5 @@ make install
 - Remove `TennisGame3` logic and extends `TextTennisGame` logic
 - Replace `TennisGame3Test` logic by `TennisGame2Test` logic
 - Make `TennisGame3Test` and `TennisGame3` `final`
+- Now there is a new empty class `TennisGame3` just like the already refactored `TennisGame1` and `TennisGame2`
+- Let's move forward to refactor `TennisGame4`
