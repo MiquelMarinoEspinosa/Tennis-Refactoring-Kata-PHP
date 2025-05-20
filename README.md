@@ -526,3 +526,4 @@ make install
 - Make `TennisGame7` and `TennisGame7Test` final
 - Replace `TennisGame7Test` logic by previous tests already refactored logic
 - Call `parent::getScore` instead of accessing directly to `scoreBoard` attribute and make the property hook `private` again |:-D
+- Refactor test to use `sprintf` instead of `dot concatenation operator`

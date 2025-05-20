@@ -25,6 +25,13 @@ final class TennisGame7Test extends TestMaster
     #[DataProvider('data')]
     public function testScores(int $score1, int $score2, string $expectedResult): void
     {
-        $this->assertScores($score1, $score2, "Current score: " . $expectedResult . ", enjoy your game!");
+        $this->assertScores(
+            $score1,
+            $score2,
+            sprintf(
+                "Current score: %s, enjoy your game!",
+                $expectedResult
+            )
+        );
     }
 }
