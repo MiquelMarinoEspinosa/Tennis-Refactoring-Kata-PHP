@@ -542,3 +542,4 @@ make install
     - Remove `TennisGame1Test` and `TennisGame1` classes
     - Remove `TennisGame2Test` and `TennisGame2` classes
     - Remove `TennisGame3Test` and `TennisGame3` classes
+    - Remove `TennisGame6Test` and `TennisGame6` classes
