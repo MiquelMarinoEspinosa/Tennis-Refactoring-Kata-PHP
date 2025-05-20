@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TennisGame;
 
-class TennisGame7 extends TextTennisGame
+final class TennisGame7 extends TextTennisGame
 {
     public function getScore(): string
     {
