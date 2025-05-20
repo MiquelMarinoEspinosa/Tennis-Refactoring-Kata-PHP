@@ -503,3 +503,5 @@ make install
   - refactor `playersScore` method's name to `regularScore`
   - refactor `winFor` method's name to `endGameFor`
   - refactor `playerScore` method's name to `regularScoreFor`
+- At this point, `TennisGame6` can be considered done ^_^
+- Let's take care of the final game `TennisGame7` refactor
