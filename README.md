@@ -457,3 +457,4 @@ make install
   - Implements a `precommit` filed to execute `unit tests` for each commit
 - Refactor `TennisGame2` extend from `BaseTennisGame` and remove its logic
 - Make `TennisGame2` and `TennisGame2Test` `final`
+- Refactor `TennisGame2Test` to use same logic as `TennisGame1Test`
