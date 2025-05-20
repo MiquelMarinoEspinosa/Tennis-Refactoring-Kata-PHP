@@ -33,7 +33,7 @@ class TextTennisGame implements TennisGame
                 return $this->advantageOrEndGame();
             }
 
-            return $this->playersScore();
+            return $this->regularScore();
         }
     }
 
@@ -92,7 +92,7 @@ class TextTennisGame implements TennisGame
         return sprintf('Win for %s', $player);
     }
 
-    private function playersScore(): string
+    private function regularScore(): string
     {
         return sprintf(
             '%s-%s',
