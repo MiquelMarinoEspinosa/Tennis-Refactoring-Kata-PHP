@@ -487,3 +487,11 @@ make install
 - Remove `TennisGame6` logic and extends `TextTennisGame` logic
 - Replace `TennisGame6Test` logic with previous refactored test classes
 - Make `TennisGame6` and `TennisGame6Test` `final` classes
+- It has been discovered at `TennisGame6` before replace its logic, that its `paragraphs code` was commented with some insightfull comments, which made me wonder to change the `methods name` at `TextTennisGame` when it comes to compute the `scoreBoard` value
+  - These were the comments
+    ```
+      // tie score
+      // end-game score
+      // regular score
+    ```
+  - refactor `isDraw` method's name to `isTie`

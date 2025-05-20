@@ -25,7 +25,7 @@ class TextTennisGame implements TennisGame
 
     private string $scoreBoard {
         get {
-            if ($this->isDraw()) {
+            if ($this->isTie()) {
                 return $this->draw();
             }
 
@@ -55,7 +55,7 @@ class TextTennisGame implements TennisGame
         return $this->scoreBoard;
     }
 
-    private function isDraw(): bool
+    private function isTie(): bool
     {
         return $this->firstPlayerScore === $this->secondPlayerScore;
     }
