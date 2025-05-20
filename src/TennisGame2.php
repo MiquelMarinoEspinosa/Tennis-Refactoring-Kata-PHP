@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TennisGame;
 
-final class TennisGame2 extends BaseTennisGame
+final class TennisGame2 extends TextTennisGame
 {
 
 }

@@ -461,3 +461,6 @@ make install
 - Make `BaseTennisGame` no `abstract`
   - Since the class has not got `abstract` method to be implemented by its `subclasses`, it is better to not make the class `abstract`
   - Also this way would indicate whether the polymorphism hierarchy is necessary
+- Refactor `BaseTennisGame` name
+  - A better name for this class will be based on the kind of output that it has. For instance, currently the output is `output text` when in the future could be required a `json output` or a `html output`
+  - Let's call it `TextTennisGame`

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TennisGame;
 
-class BaseTennisGame implements TennisGame
+class TextTennisGame implements TennisGame
 {
     /**
      * @var array<string>
