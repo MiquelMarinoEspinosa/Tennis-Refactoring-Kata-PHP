@@ -10,7 +10,7 @@ use PHPUnit\Framework\Attributes\DataProvider;
 /**
  * TennisGame1 test case.
  */
-class TennisGame2Test extends TestMaster
+final class TennisGame2Test extends TestMaster
 {
     /**
      * Prepares the environment before running a test.
