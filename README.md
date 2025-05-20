@@ -463,4 +463,10 @@ make install
   - Also this way would indicate whether the polymorphism hierarchy is necessary
 - Refactor `BaseTennisGame` name
   - A better name for this class will be based on the kind of output that it has. For instance, currently the output is `output text` when in the future could be required a `json output` or a `html output`
-  - Let's call it `TextTennisGame`
+  - Let's call it `TextTennisGame` based on its current output
+- The refactor strategy from now on would be oriented to replace the `TennisGame` logic for `TextTennisGame`
+  - It is expected to not find business logic differences across the games more than they different implementations
+  - The games `unit tests` will tell whether there are differences in the business logic
+  - Once has been achieved this refactor, a second step will be replacing the games and its tests to use the new `TextTennisGame` reducing this way the number of tests and classes
+  - Eventually, introducing `Score` class to decouple some `buisness logic` from the `presentation logic` shounds like a good idea
+  - For now let's take a look to `TennisGame3` ^^
