@@ -29,7 +29,7 @@ class TextTennisGame implements TennisGame
                 return $this->tie();
             }
 
-            if ($this->isAdvantageOrWin()) {
+            if ($this->isAdvantageOrEndGame()) {
                 return $this->advantageOrWin();
             }
 
@@ -67,7 +67,7 @@ class TextTennisGame implements TennisGame
             : 'Deuce';
     }
 
-    private function isAdvantageOrWin(): bool
+    private function isAdvantageOrEndGame(): bool
     {
         return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }

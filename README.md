@@ -497,3 +497,4 @@ make install
   - refactor `isDraw` method's name to `isTie`
   - add extra space to `TennisGame6Test` for `strict_type`
   - refactor `draw` method's name to `tie`
+  - refactor `isAdvantageOrWin` method's name to `isAdvantageOrEndGame`
