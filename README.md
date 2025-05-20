@@ -522,3 +522,4 @@ make install
 - Remove `TennisGame7` logic, extends `TextTennisGame` logic and add `suffix` and `prefix` to the `getScore` method
   - To do so, I have to relax the `scoreBoard` property hook visibility form `private` to `protected`
 - Use `sprintf` at `getScore` method instead of `dot concatenation`
+- Add `strict_types`
