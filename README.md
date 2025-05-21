@@ -615,3 +615,4 @@ make install
   - `extract method` `firstPlayerScore` getter method
   - `extract method` `secondPlayerScore` getter method
   - use `firstPlayerScore getter` at `tie` method when `isset`
+  - use `firstPlayerScore getter` at `tie` method when `sprintf`
