@@ -567,3 +567,4 @@ make install
   - Remove `firstPlayer` temp value at `TestMaster`
   - Use `secondPlayer` game field at `TestMaster` instead of temp field
   - Use `fake` directly as `secondPlayer` value at `TextTennisGameTest`
+  - Use `fake` directly as `secondPlayer` value at `LastTextTennisGameTest`
