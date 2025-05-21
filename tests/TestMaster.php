@@ -13,12 +13,10 @@ abstract class TestMaster extends TestCase
 {
     protected TennisGame $game;
     protected Generator $faker;
-    protected string $secondPlayer;
 
     protected function setUp(): void
     {
         $this->faker = Factory::create();
-        $this->secondPlayer = 'player2';
     }
 
     /**
