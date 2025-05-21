@@ -72,7 +72,7 @@ class TextTennisGame implements TennisGame
 
     private function tie(): string
     {
-        return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
+        return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore()])
             ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore])
             : 'Deuce';
     }
