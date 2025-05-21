@@ -592,3 +592,4 @@ make install
   - `extract method` message advantage for `secondPlayer`
   - `extract method` condition win for `firstPlayer`
   - `extract method` win for `firstPlayer` message
+  - `extract method` win for `secondPlayer` message
