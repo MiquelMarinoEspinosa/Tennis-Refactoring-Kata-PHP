@@ -552,3 +552,6 @@ make install
   - Refactor unit tests to avoid using temp player's name fields
   - Consider the `Score` extract logic
   - More than can come up through the refactor :D
+
+#### More refactors
+- Rename `TennisGame7` class to `LastTextTennisGame` also the `TennisGame7Test` rename it to `LastTextTennisGameTest`

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use TennisGame\TennisGame7;
 use PHPUnit\Framework\Attributes\DataProvider;
+use TennisGame\LastTextTennisGame;
 
-final class TennisGame7Test extends TestMaster
+final class LastTextTennisGameTest extends TestMaster
 {
     protected function setUp(): void
     {
@@ -16,7 +16,7 @@ final class TennisGame7Test extends TestMaster
         $this->firstPlayer = $this->faker->name;
         $this->secondPlayer = $this->faker->name;
 
-        $this->game = new TennisGame7(
+        $this->game = new LastTextTennisGame(
             $this->firstPlayer,
             $this->secondPlayer
         );
