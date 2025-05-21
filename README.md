@@ -587,3 +587,4 @@ make install
   - `extract method` increase `secondPlayerScore` into a method called `pointForSecondPlayer`
 - encapsulate `minusResult` property hook access at `endGame` method
   - `extract method` condition advantage for `firstPlayer`
+  - `extract method` message advantage for `firstPlayer`
