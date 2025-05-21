@@ -560,3 +560,5 @@ make install
   - Even though it covers the full code, I would like for now to have another test which indenpently tests the `TextTennisGame` class which its logic could be used without using the `LastTextTennisGame`
   - It might be seen as a form a duplication. I will try to address that in further iterations or may be it is ok as it is right now
   - Create `TextTennisGameTest` to unit test the `TextTennisGame`
+- Refactor unit tests to avoid using temp player's name field
+  - Refactor `TestMaster` to use `TextTennisGame` `firstPlayer` public field
