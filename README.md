@@ -569,3 +569,14 @@ make install
   - Use `fake` directly as `secondPlayer` value at `TextTennisGameTest`
   - Use `fake` directly as `secondPlayer` value at `LastTextTennisGameTest`
   - Remove unused `secondPlayer` temp field at `TestMaster`
+- At this point of the refactor, I am kind of satisfied about the current result ^^
+  - The code it is much cleaner and a lot of duplication has been removed up to this point
+  - There is still the `LastTextTennisGame` that I think that it could be removed also somehow
+    - However, since I am not certain about it, I will take a note to let my colleague now and talk about it :D
+    - For now I would keep it as it is, also keeping the 2 unit tests even though they are redundant some how now and just it tests a particular logic for `LastTextTennisGame`, changes are that that could change. Better in that situation to have 2 independent tests to cover the 2 classes
+- Now I would like to focus on extract the `score` logic
+  - Fields like `firstPlayerScore` with a either `suffix` or `prefix` use to indicate that there is some logic which could be encapsulated into its own class
+  - At this new class can be moved logic strictly related with the scores values, such as methods which just uses this values as well as methods to update the score values by player
+  - The strategy to follow will be starting to introduce an `inline anonymous class` at `TextTennisGame` and slowly start to move the `fields` and `methods` which would be considered to form part of this new class
+    - The direct `fields` usages would be encapsulated into methods to make easier the refactor
+  - Once all the `fields` and `methods` have been relocated, the class will be extracted into a new class called `Score`
