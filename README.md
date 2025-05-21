@@ -597,3 +597,4 @@ make install
   - extract first `match` condition and turned it as a `guard clause`
   - extract second `match` condition and turned it as a `guard clause`
   - extract third `match` condition and turned it as a `guard clause`
+  - return the `default` `match` case and remove `match` operator

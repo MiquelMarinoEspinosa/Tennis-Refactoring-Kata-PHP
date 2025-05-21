@@ -96,9 +96,7 @@ class TextTennisGame implements TennisGame
             return $this->winForFirstPlayer();
         }
 
-        return match(true) {
-            default => $this->winForSecondPlayer()
-        };
+        return $this->winForSecondPlayer();
     }
 
     private function isAdvantageForFirstPlayer(): bool
