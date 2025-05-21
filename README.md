@@ -564,3 +564,4 @@ make install
   - Refactor `TestMaster` to use `TextTennisGame` `firstPlayer` public field
   - Use `faker` random value for `firstPlayer` at `TextTennisGameTest`
   - Use `faker` random value for `firstPlayer` at `LastTextTennisGameTest`
+  - Remove `firstPlayer` temp value at `TestMaster`

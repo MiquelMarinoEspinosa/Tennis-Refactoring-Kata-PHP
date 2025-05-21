@@ -12,8 +12,6 @@ final class TextTennisGameTest extends TestMaster
     protected function setUp(): void
     {
         parent::setUp();
-
-        $this->firstPlayer = $this->faker->name;
         $this->secondPlayer = $this->faker->name;
 
         $this->game = new TextTennisGame(
