@@ -84,8 +84,11 @@ class TextTennisGame implements TennisGame
 
     private function endGame(): string
     {
+        if ($this->isAdvantageForFirstPlayer()) {
+            return $this->advantageForFirstPlayer();
+        }
+
         return match(true) {
-            $this->isAdvantageForFirstPlayer() => $this->advantageForFirstPlayer(),
             $this->isAdvantageForSecondPlayer() => $this->advantageForSecondPlayer(),
             $this->isWinForFirstPlayer() => $this->winForFirstPlayer(),
             default => $this->winForSecondPlayer()
