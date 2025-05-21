@@ -46,13 +46,18 @@ class TextTennisGame implements TennisGame
     public function wonPoint(string $playerName): void
     {
         $playerName === $this->firstPlayer
-            ? $this->firstPlayerScore++
+            ? $this->pointForFirstPlayer()
             : $this->secondPlayerScore++;
     }
 
     public function getScore(): string
     {
         return $this->scoreBoard;
+    }
+
+    private function pointForFirstPlayer(): void
+    {
+        $this->firstPlayerScore++;
     }
 
     private function isTie(): bool

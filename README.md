@@ -580,3 +580,7 @@ make install
   - The strategy to follow will be starting to introduce an `inline anonymous class` at `TextTennisGame` and slowly start to move the `fields` and `methods` which would be considered to form part of this new class
     - The direct `fields` usages would be encapsulated into methods to make easier the refactor
   - Once all the `fields` and `methods` have been relocated, the class will be extracted into a new class called `Score`
+
+#### Score refactor
+- `extract method` increase scores values
+  - `extract method` increase `firstPlayerScore` into a method called `pointForFirstPlayer`
