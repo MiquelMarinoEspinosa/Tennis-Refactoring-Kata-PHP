@@ -612,4 +612,5 @@ make install
     - Not sure yet whether a `2 fields` solution or more dynamic solution such as an `array` is better
     - I would like to leave it open without affecting the clients implementation
     - Nevertheless, the decision can be reviewed and change it to a `public field with asymetric visibility`
-  - `extract method` `firstPlayersScore` getter method
+  - `extract method` `firstPlayerScore` getter method
+  - `extract method` `secondPlayerScore` getter method
