@@ -598,3 +598,5 @@ make install
   - extract second `match` condition and turned it as a `guard clause`
   - extract third `match` condition and turned it as a `guard clause`
   - return the `default` `match` case and remove `match` operator
+- Some extra refactor to be consistent with current code status
+  - `extract method` regular score for `firstPlayer` message

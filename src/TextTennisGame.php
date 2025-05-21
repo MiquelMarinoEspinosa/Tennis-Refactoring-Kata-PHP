@@ -148,9 +148,14 @@ class TextTennisGame implements TennisGame
     {
         return sprintf(
             '%s-%s',
-            $this->regularScoreFor($this->firstPlayerScore),
+            $this->regularScoreForFirstPlayer(),
             $this->regularScoreFor($this->secondPlayerScore)
         );
+    }
+
+    private function regularScoreForFirstPlayer(): string
+    {
+        return $this->regularScoreFor($this->firstPlayerScore);
     }
 
     private function regularScoreFor(int $score): string
