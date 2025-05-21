@@ -616,3 +616,7 @@ make install
   - `extract method` `secondPlayerScore` getter method
   - use `firstPlayerScore getter` at `tie` method when `isset`
   - use `firstPlayerScore getter` at `tie` method when `sprintf`
+- Next steps
+  - Introduce `inline anonymous class`
+  - Move starting from the `fields` and its `getters` and `setters` till moving the rest of methods
+  - Keep backward compatibiliry in each baby step |-)
