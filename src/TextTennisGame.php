@@ -155,7 +155,12 @@ class TextTennisGame implements TennisGame
 
     private function regularScoreForFirstPlayer(): string
     {
-        return $this->regularScoreFor($this->firstPlayerScore);
+        return $this->regularScoreFor($this->firstPlayerScore());
+    }
+
+    private function firstPlayerScore(): int
+    {
+        return $this->firstPlayerScore;
     }
 
     private function regularScoreForSecondPlayer(): string

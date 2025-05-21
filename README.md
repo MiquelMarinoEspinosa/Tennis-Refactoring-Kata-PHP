@@ -601,3 +601,15 @@ make install
 - Some extra refactor to be consistent with current code status
   - `extract method` regular score for `firstPlayer` message
   - `extract method` regular score for `secondPlayer` message
+- Now the code is much modular at `TextTennisGame`
+  - Notice that the size of the class increased. However, that should not be a problem since it is planned that part of the logic would be moved to the new `Score` class
+- The `TextTennisGame` still access directly to the `score` fields at `regularScore` method
+  - I have thought that may be I would leave them open as `public` with `asymetric visibitity` with a `private` setter just like the `players' names` fields
+  - Nevertheless, this strategy can make the refactor harder because at some point could colide the field's names or can be a little bit confuse to refactor when using `asymetric visibility` not allowing a baby step refactor
+  - For that reason, it has been decided to expose `getters` for the score fields
+    - The `minusResult` it is not necessary to expose via getter, because it should not be accessible from the clients since the methods expose give teh information they would need
+  - Another advantage which is offered out of the box by the OOP is that the `Score` internal implementation can change without the need of changing the clients' code
+    - Not sure yet whether a `2 fields` solution or more dynamic solution such as an `array` is better
+    - I would like to leave it open without affecting the clients implementation
+    - Nevertheless, the decision can be reviewed and change it to a `public field with asymetric visibility`
+  - `extract method` `firstPlayersScore` getter method
