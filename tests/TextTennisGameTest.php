@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests;
 
 use PHPUnit\Framework\Attributes\DataProvider;
-use TennisGame\LastTextTennisGame;
+use TennisGame\TextTennisGame;
 
-final class LastTextTennisGameTest extends TestMaster
+final class TextTennisGameTest extends TestMaster
 {
     protected function setUp(): void
     {
@@ -16,7 +16,7 @@ final class LastTextTennisGameTest extends TestMaster
         $this->firstPlayer = $this->faker->name;
         $this->secondPlayer = $this->faker->name;
 
-        $this->game = new LastTextTennisGame(
+        $this->game = new TextTennisGame(
             $this->firstPlayer,
             $this->secondPlayer
         );
@@ -31,10 +31,7 @@ final class LastTextTennisGameTest extends TestMaster
         $this->assertScores(
             $score1,
             $score2,
-            sprintf(
-                "Current score: %s, enjoy your game!",
-                $expectedResult
-            )
+            $expectedResult
         );
     }
 }
