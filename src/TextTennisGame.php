@@ -85,11 +85,16 @@ class TextTennisGame implements TennisGame
     private function endGame(): string
     {
         return match(true) {
-            $this->minusResult === 1  => $this->advantageFor($this->firstPlayer),
+            $this->isAdvantageForFirstPlayer() => $this->advantageFor($this->firstPlayer),
             $this->minusResult === -1 => $this->advantageFor($this->secondPlayer),
             $this->minusResult >= 2   => $this->winFor($this->firstPlayer),
             default                   => $this->winFor($this->secondPlayer)
         };
+    }
+
+    private function isAdvantageForFirstPlayer(): bool
+    {
+        return $this->minusResult === 1;
     }
 
     private function advantageFor(string $player): string
