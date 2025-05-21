@@ -84,7 +84,7 @@ abstract class TestMaster extends TestCase
             }
             if ($i < $score2) {
                 $this->game->wonPoint(
-                    $this->secondPlayer
+                    $this->game->secondPlayer
                 );
             }
         }
@@ -101,7 +101,7 @@ abstract class TestMaster extends TestCase
 
         return str_replace(
             'player2',
-            $this->secondPlayer,
+            $this->game->secondPlayer,
             $fixedExpectedResult
         );
     }

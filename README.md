@@ -565,3 +565,4 @@ make install
   - Use `faker` random value for `firstPlayer` at `TextTennisGameTest`
   - Use `faker` random value for `firstPlayer` at `LastTextTennisGameTest`
   - Remove `firstPlayer` temp value at `TestMaster`
+  - Use `secondPlayer` game field at `TestMaster` instead of temp field
