@@ -17,7 +17,7 @@ final class TextTennisGameTest extends TestMaster
         $this->secondPlayer = $this->faker->name;
 
         $this->game = new TextTennisGame(
-            $this->firstPlayer,
+            $this->faker->name,
             $this->secondPlayer
         );
     }
