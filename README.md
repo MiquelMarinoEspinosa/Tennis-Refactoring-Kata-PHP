@@ -595,3 +595,4 @@ make install
   - `extract method` win for `secondPlayer` message
 - After the last refactor, it does not make a lot of sense to keep the `match` operator `endGame` since now the conditions are call to functions which makes it more dificult to read with the current implementation. An implementation with `guard clauses` could improve the readability of the code
   - extract first `match` condition and turned it as a `guard clause`
+  - extract second `match` condition and turned it as a `guard clause`
