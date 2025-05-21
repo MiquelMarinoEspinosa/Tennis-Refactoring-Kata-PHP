@@ -12,11 +12,10 @@ final class TextTennisGameTest extends TestMaster
     protected function setUp(): void
     {
         parent::setUp();
-        $this->secondPlayer = $this->faker->name;
 
         $this->game = new TextTennisGame(
             $this->faker->name,
-            $this->secondPlayer
+            $this->faker->name
         );
     }
 
