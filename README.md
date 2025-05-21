@@ -600,3 +600,4 @@ make install
   - return the `default` `match` case and remove `match` operator
 - Some extra refactor to be consistent with current code status
   - `extract method` regular score for `firstPlayer` message
+  - `extract method` regular score for `secondPlayer` message
