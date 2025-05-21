@@ -562,4 +562,5 @@ make install
   - Create `TextTennisGameTest` to unit test the `TextTennisGame`
 - Refactor unit tests to avoid using temp player's name field
   - Refactor `TestMaster` to use `TextTennisGame` `firstPlayer` public field
-  - Use `faker` random value at `TextTennisGameTest`
+  - Use `faker` random value for `firstPlayer` at `TextTennisGameTest`
+  - Use `faker` random value for `firstPlayer` at `LastTextTennisGameTest`
