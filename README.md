@@ -624,3 +624,4 @@ make install
 - Create the 2 players score fields into the new `anonymous class`
 - Create the point for player methods to update score fields
   - Coverage decreased a little bit because the methods are not yet called
+- Update `anonymous class` fields when `score` is updated

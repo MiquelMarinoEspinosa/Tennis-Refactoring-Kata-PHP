@@ -62,6 +62,10 @@ class TextTennisGame implements TennisGame
     public function wonPoint(string $playerName): void
     {
         $playerName === $this->firstPlayer
+            ? $this->score->pointForFirstPlayer()
+            : $this->score->pointForSecondPlayer();
+
+        $playerName === $this->firstPlayer
             ? $this->pointForFirstPlayer()
             : $this->pointForSecondPlayer();
     }
