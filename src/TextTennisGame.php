@@ -19,10 +19,6 @@ class TextTennisGame implements TennisGame
 
     private int $secondPlayerScore = 0;
 
-    private int $minusResult {
-        get => $this->firstPlayerScore - $this->secondPlayerScore;
-    }
-
     private object $score;
 
     private string $scoreBoard {

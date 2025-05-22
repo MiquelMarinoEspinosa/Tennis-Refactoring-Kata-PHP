@@ -634,3 +634,4 @@ make install
 - Move `isAdvantageForSecondPlayer` method at `anonymous class`
 - Apply `yoda condition`
 - Move `isWinForFirstPlayer` method at `anonymous class`
+- Remove unused `minusResult` unused property at `TextTennisGame`
