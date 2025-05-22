@@ -620,4 +620,5 @@ make install
   - Introduce `inline anonymous class`
   - Move starting from the `fields` and its `getters` and `setters` till moving the rest of methods
   - Keep backward compatibiliry in each baby step |-)
-- Introduct `inline anonymous class` at `TextTennisGame` as `score` field
+- Introduce `inline anonymous class` at `TextTennisGame` as `score` field
+- Create the 2 players score fields into the new `anonymous class`

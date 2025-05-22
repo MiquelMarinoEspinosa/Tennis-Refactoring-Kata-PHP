@@ -43,7 +43,10 @@ class TextTennisGame implements TennisGame
         public private(set) string $firstPlayer,
         public private(set) string $secondPlayer
     ) {
-        $this->score = new class{};
+        $this->score = new class {
+            private int $firstPlayer = 0;
+            private int $secondPlayer = 0;
+        };
     }
 
     public function wonPoint(string $playerName): void
