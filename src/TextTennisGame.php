@@ -31,7 +31,7 @@ class TextTennisGame implements TennisGame
                 return $this->tie();
             }
 
-            if ($this->isEndGame()) {
+            if ($this->score->isEndGame()) {
                 return $this->endGame();
             }
 
@@ -60,6 +60,11 @@ class TextTennisGame implements TennisGame
             public function isTie(): bool
             {
                 return $this->firstPlayer === $this->secondPlayer;
+            }
+
+            public function isEndGame(): bool
+            {
+                return $this->firstPlayer >= 4 || $this->secondPlayer >= 4;
             }
         };
     }
@@ -95,11 +100,6 @@ class TextTennisGame implements TennisGame
         return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore()])
             ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore()])
             : 'Deuce';
-    }
-
-    private function isEndGame(): bool
-    {
-        return $this->firstPlayerScore >= 4 || $this->secondPlayerScore >= 4;
     }
 
     private function endGame(): string

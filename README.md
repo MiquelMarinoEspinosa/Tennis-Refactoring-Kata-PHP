@@ -626,3 +626,4 @@ make install
   - Coverage decreased a little bit because the methods are not yet called
 - Update `anonymous class` fields when `score` is updated
 - Move `isTie` method to `anoymous class` and call it from `scoreBoard property hook`
+- Move is `endGame` method to `anonymous class` and call it from `scoreBoard property hook`
