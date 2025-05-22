@@ -46,6 +46,16 @@ class TextTennisGame implements TennisGame
         $this->score = new class {
             private int $firstPlayer = 0;
             private int $secondPlayer = 0;
+
+            public function pointForFirstPlayer(): void
+            {
+                $this->firstPlayer++;
+            }
+
+            public function pointForSecondPlayer(): void
+            {
+                $this->secondPlayer++;
+            }
         };
     }
 

@@ -622,3 +622,5 @@ make install
   - Keep backward compatibiliry in each baby step |-)
 - Introduce `inline anonymous class` at `TextTennisGame` as `score` field
 - Create the 2 players score fields into the new `anonymous class`
+- Create the point for player methods to update score fields
+  - Coverage decreased a little bit because the methods are not yet called
