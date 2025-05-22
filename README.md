@@ -625,3 +625,4 @@ make install
 - Create the point for player methods to update score fields
   - Coverage decreased a little bit because the methods are not yet called
 - Update `anonymous class` fields when `score` is updated
+- Move `isTie` method to `anoymous class` and call it from `scoreBoard property hook`
