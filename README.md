@@ -630,3 +630,4 @@ make install
 - Duplicate `minusResult property hook` at the `anonymous class`
 - Refactor `minusResult property hook` name into `distance`
 - Move `isAdvantageForFirstPlayer` method at `anonymous class`
+- Refactor `distance property hook` name into `advantage` XD

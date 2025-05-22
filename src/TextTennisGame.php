@@ -47,7 +47,7 @@ class TextTennisGame implements TennisGame
             private int $firstPlayer = 0;
             private int $secondPlayer = 0;
 
-            private int $distance {
+            private int $advantage {
                 get => $this->firstPlayer - $this->secondPlayer;
             }
 
@@ -73,7 +73,7 @@ class TextTennisGame implements TennisGame
 
             public function isAdvantageForFirstPlayer(): bool
             {
-                return $this->distance === 1;
+                return $this->advantage === 1;
             }
         };
     }
