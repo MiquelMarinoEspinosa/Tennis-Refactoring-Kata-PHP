@@ -23,6 +23,8 @@ class TextTennisGame implements TennisGame
         get => $this->firstPlayerScore - $this->secondPlayerScore;
     }
 
+    private object $score;
+
     private string $scoreBoard {
         get {
             if ($this->isTie()) {
@@ -41,6 +43,7 @@ class TextTennisGame implements TennisGame
         public private(set) string $firstPlayer,
         public private(set) string $secondPlayer
     ) {
+        $this->score = new class{};
     }
 
     public function wonPoint(string $playerName): void
