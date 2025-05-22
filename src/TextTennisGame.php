@@ -80,6 +80,11 @@ class TextTennisGame implements TennisGame
             {
                 return -1 === $this->advantage;
             }
+
+            public function isWinForFirstPlayer(): bool
+            {
+                return $this->advantage >= 2;
+            }
         };
     }
 
@@ -126,16 +131,11 @@ class TextTennisGame implements TennisGame
             return $this->advantageForSecondPlayer();
         }
 
-        if ($this->isWinForFirstPlayer()) {
+        if ($this->score->isWinForFirstPlayer()) {
             return $this->winForFirstPlayer();
         }
 
         return $this->winForSecondPlayer();
-    }
-
-    private function isWinForFirstPlayer(): bool
-    {
-        return $this->minusResult >= 2;
     }
 
     private function advantageForFirstPlayer(): string

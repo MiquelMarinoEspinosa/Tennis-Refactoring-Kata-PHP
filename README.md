@@ -633,3 +633,4 @@ make install
 - Refactor `distance property hook` name into `advantage` XD
 - Move `isAdvantageForSecondPlayer` method at `anonymous class`
 - Apply `yoda condition`
+- Move `isWinForFirstPlayer` method at `anonymous class`
