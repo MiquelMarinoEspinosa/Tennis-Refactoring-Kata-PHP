@@ -635,3 +635,8 @@ make install
 - Apply `yoda condition`
 - Move `isWinForFirstPlayer` method at `anonymous class`
 - Remove unused `minusResult` unused property at `TextTennisGame`
+- Next steps
+  - Move `firstPlayerScore` method to the `anonymous class`
+  - Move `secondPlayerScore` method to the `anonymous class`
+  - Remove `score fields` at `TextTennisGame`
+  - Extract `inline anoymous class` into a `Score` class
