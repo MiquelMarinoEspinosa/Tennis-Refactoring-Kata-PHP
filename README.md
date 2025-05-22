@@ -627,3 +627,4 @@ make install
 - Update `anonymous class` fields when `score` is updated
 - Move `isTie` method to `anoymous class` and call it from `scoreBoard property hook`
 - Move is `endGame` method to `anonymous class` and call it from `scoreBoard property hook`
+- Duplicate `minusResult property hook` at the `anonymous class`
