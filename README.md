@@ -629,3 +629,4 @@ make install
 - Move is `endGame` method to `anonymous class` and call it from `scoreBoard property hook`
 - Duplicate `minusResult property hook` at the `anonymous class`
 - Refactor `minusResult property hook` name into `distance`
+- Move `isAdvantageForFirstPlayer` method at `anonymous class`
