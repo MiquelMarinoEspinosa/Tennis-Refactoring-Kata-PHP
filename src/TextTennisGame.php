@@ -47,7 +47,7 @@ class TextTennisGame implements TennisGame
             private int $firstPlayer = 0;
             private int $secondPlayer = 0;
 
-            private int $minusResult {
+            private int $distance {
                 get => $this->firstPlayer - $this->secondPlayer;
             }
 
