@@ -15,10 +15,6 @@ class TextTennisGame implements TennisGame
         2 => 'Thirty'
     ];
 
-    private int $firstPlayerScore = 0;
-
-    private int $secondPlayerScore = 0;
-
     private object $score;
 
     private string $scoreBoard {
@@ -106,20 +102,15 @@ class TextTennisGame implements TennisGame
         return $this->scoreBoard;
     }
 
-    private function pointForFirstPlayer(): void
-    {
-        $this->firstPlayerScore++;
-    }
-
-    private function pointForSecondPlayer(): void
-    {
-        $this->secondPlayerScore++;
-    }
-
     private function tie(): string
     {
-        return isset(self::SCORE_MESSAGE_MAP[$this->score->firstPlayerScore()])
-            ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->score->firstPlayerScore()])
+        return isset(
+            self::SCORE_MESSAGE_MAP[$this->score->firstPlayerScore()]
+        )
+            ? sprintf(
+                '%s-All',
+                self::SCORE_MESSAGE_MAP[$this->score->firstPlayerScore()]
+            )
             : 'Deuce';
     }
 
@@ -181,12 +172,16 @@ class TextTennisGame implements TennisGame
 
     private function regularScoreForFirstPlayer(): string
     {
-        return $this->regularScoreFor($this->score->firstPlayerScore());
+        return $this->regularScoreFor(
+            $this->score->firstPlayerScore()
+        );
     }
 
     private function regularScoreForSecondPlayer(): string
     {
-        return $this->regularScoreFor($this->score->secondPlayerScore());
+        return $this->regularScoreFor(
+            $this->score->secondPlayerScore()
+        );
     }
 
     private function regularScoreFor(int $score): string
