@@ -644,3 +644,4 @@ make install
 - Move `secondPlayerScore` method to the `anonymous class`
 - Remove `update Game score fields` methods call at `wonPoint` method
 - Remove `score update methods and fields` at `TextTennisGame`
+- Extract `inline anonymous class` into a new class called `Score`
