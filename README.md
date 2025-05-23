@@ -645,3 +645,20 @@ make install
 - Remove `update Game score fields` methods call at `wonPoint` method
 - Remove `score update methods and fields` at `TextTennisGame`
 - Extract `inline anonymous class` into a new class called `Score`
+  - It has been extract `60` lines of code and most importantly some `business logic` related to the `score` has been decoupled from the `presentation logic`
+  - Introducing an `array` as a `score data structure` would even remove the `players names` at `TextTennisGame`. However, that would make the code more complicated to understand. For now it will be kept it as it is
+
+#### Final considerations
+- It has been a very good refactoring kata :)
+- It is important to notice the level of duplication that the code has even though their implementations were different
+  - The reused `unit tests` could give as a clue that the logic is duplicated even when its logic is differently implemented
+- This katas are allways good to practice the refactor strategy
+  - Have the code covered by `automated tests`
+  - Do small refactors
+  - Run the tests on every refactor
+  - Commit each baby step to have a safe returning point
+- The `game 1` refactor gave the baseline for the rest of the kata
+  - Extracting its logic in a super class and replace the rest of the games with the super class logic
+- Finally, being able to spot extra logic which could be extracted in new class using the `anonymous inline class` refactor strategy, make the exercise very interesting :D
+
+**Happy refactoring!**
