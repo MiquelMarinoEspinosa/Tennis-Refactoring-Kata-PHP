@@ -86,6 +86,11 @@ class TextTennisGame implements TennisGame
             {
                 return $this->firstPlayer;
             }
+
+            public function secondPlayerScore(): int
+            {
+                return $this->secondPlayer;
+            }
         };
     }
 
@@ -185,12 +190,7 @@ class TextTennisGame implements TennisGame
 
     private function regularScoreForSecondPlayer(): string
     {
-        return $this->regularScoreFor($this->secondPlayerScore());
-    }
-
-    private function secondPlayerScore(): int
-    {
-        return $this->secondPlayerScore;
+        return $this->regularScoreFor($this->score->secondPlayerScore());
     }
 
     private function regularScoreFor(int $score): string
