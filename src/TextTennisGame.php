@@ -99,10 +99,6 @@ class TextTennisGame implements TennisGame
         $playerName === $this->firstPlayer
             ? $this->score->pointForFirstPlayer()
             : $this->score->pointForSecondPlayer();
-
-        $playerName === $this->firstPlayer
-            ? $this->pointForFirstPlayer()
-            : $this->pointForSecondPlayer();
     }
 
     public function getScore(): string

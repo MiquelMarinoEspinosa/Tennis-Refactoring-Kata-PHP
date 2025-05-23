@@ -642,3 +642,4 @@ make install
   - Extract `inline anoymous class` into a `Score` class
 - Move `firstPlayerScore` method to the `anonymous class`
 - Move `secondPlayerScore` method to the `anonymous class`
+- Remove `update Game score fields` methods call at `wonPoint` method
