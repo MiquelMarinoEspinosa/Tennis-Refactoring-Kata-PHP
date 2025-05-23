@@ -640,3 +640,4 @@ make install
   - Move `secondPlayerScore` method to the `anonymous class`
   - Remove `score fields` at `TextTennisGame`
   - Extract `inline anoymous class` into a `Score` class
+- Move `firstPlayerScore` method to the `anonymous` class

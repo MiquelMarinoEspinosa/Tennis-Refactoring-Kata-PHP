@@ -81,6 +81,11 @@ class TextTennisGame implements TennisGame
             {
                 return $this->advantage >= 2;
             }
+
+            public function firstPlayerScore(): int
+            {
+                return $this->firstPlayer;
+            }
         };
     }
 
@@ -112,8 +117,8 @@ class TextTennisGame implements TennisGame
 
     private function tie(): string
     {
-        return isset(self::SCORE_MESSAGE_MAP[$this->firstPlayerScore()])
-            ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->firstPlayerScore()])
+        return isset(self::SCORE_MESSAGE_MAP[$this->score->firstPlayerScore()])
+            ? sprintf('%s-All', self::SCORE_MESSAGE_MAP[$this->score->firstPlayerScore()])
             : 'Deuce';
     }
 
@@ -175,17 +180,12 @@ class TextTennisGame implements TennisGame
 
     private function regularScoreForFirstPlayer(): string
     {
-        return $this->regularScoreFor($this->firstPlayerScore());
+        return $this->regularScoreFor($this->score->firstPlayerScore());
     }
 
     private function regularScoreForSecondPlayer(): string
     {
         return $this->regularScoreFor($this->secondPlayerScore());
-    }
-
-    private function firstPlayerScore(): int
-    {
-        return $this->firstPlayerScore;
     }
 
     private function secondPlayerScore(): int
